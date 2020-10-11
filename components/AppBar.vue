@@ -10,7 +10,7 @@
     >
       <v-col
         cols="10"
-        sm="3"
+        md="3"
       >
         <v-avatar>
           <img
@@ -22,24 +22,29 @@
       </v-col>
 
       <v-col
-        sm="6"
+        md="5"
         class="hidden-sm-and-down"
       >
         <v-row justify="space-between">
-          <v-btn
+          <nuxt-link
             v-for="(item, i) in items"
             :key="i"
-            class="text-none"
-            text
+            :to="`${item.link}`"
           >
-            {{ item.title }}
-          </v-btn>
+            <v-btn
+              class="text-none"
+              text
+              ripple
+            >
+              {{ item.title }}
+            </v-btn>
+          </nuxt-link>
         </v-row>
       </v-col>
 
       <v-col
         cols="2"
-        sm="3"
+        md="3"
       >
         <div class="hidden-md-and-up">
           <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
@@ -80,15 +85,19 @@
             <v-list
               nav
             >
-              <v-list-item-group>
-                <v-list-item
+              <v-list-item-group mandatory>
+                <nuxt-link
                   v-for="(item, i) in items"
                   :key="i"
-                  class="text-none"
-                  text
+                  :to="`${item.link}`"
                 >
-                  {{ item.title }}
-                </v-list-item>
+                  <v-list-item
+                    class="text-none white--text"
+                    text
+                  >
+                    {{ item.title }}
+                  </v-list-item>
+                </nuxt-link>
               </v-list-item-group>
             </v-list>
           </v-navigation-drawer>
