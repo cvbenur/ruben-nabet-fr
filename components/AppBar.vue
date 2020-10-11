@@ -12,7 +12,7 @@
         cols="10"
         md="3"
       >
-        <nuxt-link to="/">
+        <nuxt-link to="/" @click.native="setActive(-1)">
           <v-avatar>
             <img
               src="@/assets/img/pp_fb.jpg"
@@ -98,7 +98,8 @@
                   <v-list-item
                     class="text-none"
                     text
-                    color="accent"
+                    :color="item.active ? 'accent' : 'white'"
+                    @click="setActive(i)"
                   >
                     {{ item.title }}
                   </v-list-item>
@@ -139,9 +140,9 @@ export default class AppBar extends Vue {
 
   setActive (n: number) {
     for (let i = 0; i < this.items.length; i++) {
-      i === n
-        ? this.items[i].active = true
-        : this.items[i].active = false
+      i !== n || n === -1
+        ? this.items[i].active = false
+        : this.items[i].active = true
     }
   }
 }
