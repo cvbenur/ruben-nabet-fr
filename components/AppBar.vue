@@ -12,13 +12,15 @@
         cols="10"
         md="3"
       >
-        <v-avatar>
-          <img
-            src="@/assets/img/pp_fb.jpg"
-            alt="Ruben Nabet"
-          >
-        </v-avatar>
-        <span class="ml-4">Ruben <b>NABET_</b></span>
+        <nuxt-link to="/">
+          <v-avatar>
+            <img
+              src="@/assets/img/pp_fb.jpg"
+              alt="Ruben Nabet"
+            >
+          </v-avatar>
+          <span class="ml-4 white--text">Ruben <b>NABET_</b></span>
+        </nuxt-link>
       </v-col>
 
       <v-col
@@ -35,6 +37,8 @@
               class="text-none"
               text
               ripple
+              :color="item.active ? 'accent' : 'white'"
+              @click="setActive(i)"
             >
               {{ item.title }}
             </v-btn>
@@ -92,8 +96,9 @@
                   :to="`${item.link}`"
                 >
                   <v-list-item
-                    class="text-none white--text"
+                    class="text-none"
                     text
+                    color="accent"
                   >
                     {{ item.title }}
                   </v-list-item>
@@ -117,16 +122,27 @@ export default class AppBar extends Vue {
   private items = [
     {
       title: 'A propos_',
-      link: '/'
+      link: '/',
+      active: false
     },
     {
       title: 'Technologies_',
-      link: '/'
+      link: '/',
+      active: false
     },
     {
       title: 'Projets_',
-      link: '/'
+      link: '/',
+      active: false
     }
   ];
+
+  setActive (n: number) {
+    for (let i = 0; i < this.items.length; i++) {
+      i === n
+        ? this.items[i].active = true
+        : this.items[i].active = false
+    }
+  }
 }
 </script>
