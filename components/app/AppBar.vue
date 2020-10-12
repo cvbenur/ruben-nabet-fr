@@ -49,9 +49,31 @@
       <v-col
         cols="2"
         md="3"
+        class="text-right"
       >
+        <div class="hidden-sm-and-down">
+          <v-btn
+            icon
+          >
+            <v-icon
+              color="white"
+              @click="$vuetify.theme.dark = !$vuetify.theme.dark"
+            >
+              {{ $vuetify.theme.dark ? 'far fa-moon' : 'fas fa-sun' }}
+            </v-icon>
+          </v-btn>
+
+          <v-btn
+            icon
+          >
+            <v-icon color="white">
+              fas fa-globe
+            </v-icon>
+          </v-btn>
+        </div>
+
         <div class="hidden-md-and-up">
-          <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+          <v-app-bar-nav-icon class="white--text" @click.stop="drawer = !drawer" />
 
           <v-navigation-drawer
             v-model="drawer"
@@ -88,6 +110,7 @@
 
             <v-list
               nav
+              dark
             >
               <v-list-item-group mandatory>
                 <nuxt-link
@@ -96,7 +119,6 @@
                   :to="`${item.link}`"
                 >
                   <v-list-item
-                    class="text-none"
                     text
                     :color="item.active ? 'accent' : 'white'"
                     @click="setActive(i)"
@@ -106,6 +128,27 @@
                 </nuxt-link>
               </v-list-item-group>
             </v-list>
+
+            <div class="text-center">
+              <v-btn
+                icon
+              >
+                <v-icon
+                  color="white"
+                  @click="$vuetify.theme.dark = !$vuetify.theme.dark"
+                >
+                  {{ $vuetify.theme.dark ? 'far fa-moon' : 'fas fa-sun' }}
+                </v-icon>
+              </v-btn>
+
+              <v-btn
+                icon
+              >
+                <v-icon color="white">
+                  fas fa-globe
+                </v-icon>
+              </v-btn>
+            </div>
           </v-navigation-drawer>
         </div>
       </v-col>
@@ -123,7 +166,7 @@ export default class AppBar extends Vue {
   private items = [
     {
       title: 'A propos_',
-      link: '/',
+      link: '/about-me',
       active: false
     },
     {
@@ -132,9 +175,21 @@ export default class AppBar extends Vue {
       active: false
     },
     {
-      title: 'Projets_',
+      title: 'Mes projets_',
       link: '/',
       active: false
+    }
+  ];
+
+  private languages = [
+    {
+      title: 'English'
+    },
+    {
+      title: 'French'
+    },
+    {
+      title: 'Español'
     }
   ];
 

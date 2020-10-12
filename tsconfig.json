@@ -11,6 +11,8 @@
     "noEmit": true,
     "experimentalDecorators": true,
     "baseUrl": ".",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
     "paths": {
       "~/*": ["./*"],
       "@/*": ["./*"]
