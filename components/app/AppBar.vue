@@ -171,7 +171,7 @@ export default class AppBar extends Vue {
     },
     {
       title: 'Technologies_',
-      link: '/',
+      link: '/technologies',
       active: false
     },
     {
