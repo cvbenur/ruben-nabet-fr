@@ -2,10 +2,11 @@
   <v-chip
     class="ma-2"
     small
-    :color="techno.color"
+    :color="techno.pillColor"
     pill
+    dark
   >
-    <p :class="`ma-0 ${textColor}--text`">
+    <p :class="`ma-0 ${techno.textColor}--text`">
       {{ techno.title }}
     </p>
   </v-chip>
@@ -13,14 +14,11 @@
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator'
-import { Technology, web } from '@/models/technologies'
+import { Technology } from '@/models/technologies'
 
 @Component({})
 export default class TechnoPill extends Vue {
-  @Prop({ required: false, default: new Technology(web[0].title, web[0].color, web[0].textColor, web[0].icon, web[0].link) })
+  @Prop({ required: true })
   techno!: Technology;
-
-  @Prop({ required: false, default: 'white' })
-  textColor!: string;
 }
 </script>
