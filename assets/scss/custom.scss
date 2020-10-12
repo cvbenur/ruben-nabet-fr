@@ -4,6 +4,8 @@
   -webkit-box-shadow: $params;
   -moz-box-shadow: $params;
   box-shadow: $params;
+
+  border-radius: 4px;
 }
 
 .shifted-bottom-right {
@@ -25,4 +27,13 @@
 /*    ==    Text colors   ==    */
 .text-custom-blue {
   color: #6699cc;
+}
+
+/*    ==    Custom Border radius    ==    */
+.custom-rounded {
+  border-radius: 4px;
+}
+
+.rounded-img {
+  border-radius: 4px;
 }

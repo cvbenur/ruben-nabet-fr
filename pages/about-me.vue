@@ -139,47 +139,37 @@
 import { Vue, Component } from 'vue-property-decorator'
 import { Experience, professionalExperiences, education } from '@/models/experience'
 
-      @Component({})
+@Component({})
 export default class About extends Vue {
-      private socials = [
-        {
-          title: 'LinkedIn',
-          icon: 'fab fa-linkedin-in',
-          link: 'https://linkedin.com/in/ruben-nabet'
-        },
-        {
-          title: 'GitHub',
-          icon: 'fab fa-github-alt',
-          link: 'https://github.com/cvbenur'
-        },
-        {
-          title: 'SoundCloud',
-          icon: 'fab fa-soundcloud',
-          link: 'https://soundcloud.com/benur_music'
-        }
-      ];
+  private socials = [
+    {
+      title: 'LinkedIn',
+      icon: 'fab fa-linkedin-in',
+      link: 'https://linkedin.com/in/ruben-nabet'
+    },
+    {
+      title: 'GitHub',
+      icon: 'fab fa-github-alt',
+      link: 'https://github.com/cvbenur'
+    },
+    {
+      title: 'SoundCloud',
+      icon: 'fab fa-soundcloud',
+      link: 'https://soundcloud.com/benur_music'
+    }
+  ];
 
-      private exps: {
-      pro: Array<Experience>,
-      edu: Array<Experience>
-      } = {
-        pro: [],
-        edu: []
-      };
+  private exps: {
+  pro: Array<Experience>,
+  edu: Array<Experience>
+  } = {
+    pro: [],
+    edu: []
+  };
 
-      created () {
-        professionalExperiences.forEach(exp => this.exps.pro.push(new Experience(exp.title, exp.description, exp.date)))
-        education.forEach(exp => this.exps.edu.push(new Experience(exp.title, exp.description, exp.date)))
-      }
+  created () {
+    professionalExperiences.forEach(exp => this.exps.pro.push(new Experience(exp.title, exp.description, exp.date)))
+    education.forEach(exp => this.exps.edu.push(new Experience(exp.title, exp.description, exp.date)))
+  }
 }
 </script>
-
-      <style scoped>
-      .rounded-img {
-      border-radius: 5px;
-      }
-      </style>
-      </template></v-container>
-    </title>
-  </v-container>
-</template>
