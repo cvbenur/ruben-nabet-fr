@@ -21,10 +21,12 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
+    '@/assets/scss/styles.scss'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
+    '@/plugins/vuetify.ts'
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)

@@ -1,0 +1,28 @@
+/*    ==    Drop shadows    ==    */
+
+@mixin box-shadow($params) {
+  -webkit-box-shadow: $params;
+  -moz-box-shadow: $params;
+  box-shadow: $params;
+}
+
+.shifted-bottom-right {
+  @include box-shadow(8px 8px 0px $shadow-color);
+}
+
+.shifted-top-right {
+  @include box-shadow(8px -8px 0px $shadow-color);
+}
+
+.shifted-top-left {
+  @include box-shadow(-8px -8px 0px $shadow-color);
+}
+
+.shifted-bottom-left {
+  @include box-shadow(-8px 8px 0px $shadow-color);
+}
+
+/*    ==    Text colors   ==    */
+.text-custom-blue {
+  color: #6699cc;
+}
