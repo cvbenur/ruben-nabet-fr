@@ -43,8 +43,7 @@
 
     <v-row
       fill-height
-      align="
-      center"
+      align="center"
       justify="center"
       class="mt-5"
     >
