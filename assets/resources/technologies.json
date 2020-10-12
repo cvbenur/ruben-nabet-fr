@@ -4,6 +4,8 @@
       "title": "HTML5",
       "color": "#E44D26",
       "textColor": "white",
+      "pillColor": "#E44D26",
+      "tileColor": "#E44D26",
       "icon": "html5.svg",
       "link": "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
     },
@@ -11,6 +13,8 @@
       "title": "CSS3",
       "color": "#264DE4",
       "textColor": "white",
+      "pillColor": "#264DE4",
+      "tileColor": "#264DE4",
       "icon": "css3.svg",
       "link": "https://developer.mozilla.org/en-US/docs/Archive/CSS3"
     },
@@ -18,6 +22,8 @@
       "title": "JavaScript",
       "color": "#F5DE19",
       "textColor": "black",
+      "pillColor": "#F5DE19",
+      "tileColor": "#F5DE19",
       "icon": "javascript.svg",
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
     },
@@ -25,13 +31,17 @@
       "title": "TypeScript",
       "color": "#007ACC",
       "textColor": "white",
+      "pillColor": "#007ACC",
+      "tileColor": "white",
       "icon": "typescript.svg",
       "link": "https://www.typescriptlang.org/"
     },
     {
       "title": "NodeJS",
       "color": "#3C873A",
-      "textColor": "black",
+      "textColor": "white",
+      "pillColor": "#3C873A",
+      "tileColor": "#3C873A",
       "icon": "nodejs.svg",
       "link": "https://nodejs.org/"
     },
@@ -39,6 +49,8 @@
       "title": "VueJS",
       "color": "#14B883",
       "textColor": "white",
+      "pillColor": "#14B883",
+      "tileColor": "#14B883",
       "icon": "vuejs.svg",
       "link": "https://vuejs.org/"
     },
@@ -46,14 +58,18 @@
       "title": "NuxtJS",
       "color": "#41b883",
       "textColor": "white",
+      "pillColor": "#41b883",
+      "tileColor": "#41b883",
       "icon": "nuxtjs.svg",
       "link": "https://nuxtjs.org/"
     },
     {
       "title": "SCSS",
       "color": "#CD6799",
-      "textColor": "black",
-      "icon": "scss.svg",
+      "textColor": "white",
+      "pillColor": "#CD6799",
+      "tileColor": "white",
+      "icon": "sass.svg",
       "link": "https://sass-lang.com/"
     }
   ],
@@ -62,6 +78,8 @@
       "title": "PostgreSQL",
       "color": "#336791",
       "textColor": "white",
+      "pillColor": "#336791",
+      "tileColor": "#336791",
       "icon": "postgresql.svg",
       "link": "https://www.postgresql.org/"
     },
@@ -69,6 +87,8 @@
       "title": "Firebase",
       "color": "#FFA000",
       "textColor": "white",
+      "pillColor": "#FFA000",
+      "tileColor": "#FF8A65",
       "icon": "firebase.svg",
       "link": "https://firebase.google.com/"
     },
@@ -76,6 +96,8 @@
       "title": "Oracle SQL",
       "color": "#F80000",
       "textColor": "white",
+      "pillColor": "#F80000",
+      "tileColor": "#F80000",
       "icon": "oracle.svg",
       "link": "https://www.oracle.com/database/technologies/appdev/sql.html"
     }
@@ -83,8 +105,10 @@
   "deployment": [
     {
       "title": "Docker",
-      "color": "#0DB7ED",
+      "color": "#066DA5",
       "textColor": "white",
+      "pillColor": "#066DA5",
+      "tileColor": "#066DA5",
       "icon": "docker.svg",
       "link": "https://www.docker.com/"
     },
@@ -92,13 +116,17 @@
       "title": "GitLab CI/CD",
       "color": "#FC6D26",
       "textColor": "white",
+      "pillColor": "#FC6D26",
+      "tileColor": "#FC6D26",
       "icon": "gitlab.svg",
       "link": "https://about.gitlab.com/"
     },
     {
       "title": "GitHub Actions",
-      "color": "black",
+      "color": "#171515",
       "textColor": "white",
+      "pillColor": "#171515",
+      "tileColor": "#171515",
       "icon": "github.svg",
       "link": "https://github.com/"
     }
@@ -108,6 +136,8 @@
       "title": "Debian",
       "color": "#A80030",
       "textColor": "white",
+      "pillColor": "#A80030",
+      "tileColor": "#A80030",
       "icon": "debian.svg",
       "link": "https://www.debian.org/"
     },
@@ -115,6 +145,8 @@
       "title": "Ubuntu",
       "color": "#E95420",
       "textColor": "white",
+      "pillColor": "#E95420",
+      "tileColor": "#E95420",
       "icon": "ubuntu.svg",
       "link": "https://ubuntu.com/"
     }
@@ -124,6 +156,8 @@
       "title": "C",
       "color": "#283593",
       "textColor": "white",
+      "pillColor": "#283593",
+      "tileColor": "#283593",
       "icon": "c.svg",
       "link": "https://en.wikipedia.org/wiki/C_(programming_language)/"
     },
@@ -131,13 +165,17 @@
       "title": "Python",
       "color": "#387EB8",
       "textColor": "white",
+      "pillColor": "#387EB8",
+      "tileColor": "#387EB8",
       "icon": "python.svg",
       "link": "https://www.python.org/"
     },
     {
       "title": "Java",
       "color": "#E76F00",
-      "textColor": "white",
+      "textColor": "orange",
+      "pillColor": "white",
+      "tileColor": "white",
       "icon": "java.svg",
       "link": "https://www.java.com/"
     }
