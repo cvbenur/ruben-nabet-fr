@@ -1,15 +1,6 @@
 <template>
   <v-container>
-    <v-row
-      fill-height
-      align="center"
-      justify="start"
-      class="my-5 mx-0"
-    >
-      <p class="ma-0 text-h4 font-weight-bold">
-        A propos de moi_
-      </p>
-    </v-row>
+    <Title title="A propos de moi" />
 
     <v-row
       fill-height
@@ -45,20 +36,15 @@
       </v-col>
     </v-row>
 
-    <v-row
-      fill-height
-      align="center"
-      justify="end"
-      class="mx-0 mt-15"
-    >
-      <p class="ma-0 text-h4 font-weight-bold">
-        Expérience professionnelle_
-      </p>
-    </v-row>
+    <Title
+      title="Expérience professionnelle"
+      alignment="right"
+    />
 
     <v-row
       fill-height
-      align="center"
+      align="
+      center"
       justify="center"
       class="mt-5"
     >
@@ -68,16 +54,7 @@
       />
     </v-row>
 
-    <v-row
-      fill-height
-      align="center"
-      justify="start"
-      class="mx-0 mt-10"
-    >
-      <p class="ma-0 text-h4 font-weight-bold">
-        Formation_
-      </p>
-    </v-row>
+    <Title title="Formation" />
 
     <v-row
       fill-height
@@ -163,43 +140,47 @@
 import { Vue, Component } from 'vue-property-decorator'
 import { Experience, professionalExperiences, education } from '@/models/experience'
 
-@Component({})
+      @Component({})
 export default class About extends Vue {
-  private socials = [
-    {
-      title: 'LinkedIn',
-      icon: 'fab fa-linkedin-in',
-      link: 'https://linkedin.com/in/ruben-nabet'
-    },
-    {
-      title: 'GitHub',
-      icon: 'fab fa-github-alt',
-      link: 'https://github.com/cvbenur'
-    },
-    {
-      title: 'SoundCloud',
-      icon: 'fab fa-soundcloud',
-      link: 'https://soundcloud.com/benur_music'
-    }
-  ];
+      private socials = [
+        {
+          title: 'LinkedIn',
+          icon: 'fab fa-linkedin-in',
+          link: 'https://linkedin.com/in/ruben-nabet'
+        },
+        {
+          title: 'GitHub',
+          icon: 'fab fa-github-alt',
+          link: 'https://github.com/cvbenur'
+        },
+        {
+          title: 'SoundCloud',
+          icon: 'fab fa-soundcloud',
+          link: 'https://soundcloud.com/benur_music'
+        }
+      ];
 
-  private exps: {
-    pro: Array<Experience>,
-    edu: Array<Experience>
-  } = {
-    pro: [],
-    edu: []
-  };
+      private exps: {
+      pro: Array<Experience>,
+      edu: Array<Experience>
+      } = {
+        pro: [],
+        edu: []
+      };
 
-  created () {
-    professionalExperiences.forEach(exp => this.exps.pro.push(new Experience(exp.title, exp.description, exp.date)))
-    education.forEach(exp => this.exps.edu.push(new Experience(exp.title, exp.description, exp.date)))
-  }
+      created () {
+        professionalExperiences.forEach(exp => this.exps.pro.push(new Experience(exp.title, exp.description, exp.date)))
+        education.forEach(exp => this.exps.edu.push(new Experience(exp.title, exp.description, exp.date)))
+      }
 }
 </script>
 
-<style scoped>
-.rounded-img {
-  border-radius: 5px;
-}
-</style>
+      <style scoped>
+      .rounded-img {
+      border-radius: 5px;
+      }
+      </style>
+      </template></v-container>
+    </title>
+  </v-container>
+</template>
