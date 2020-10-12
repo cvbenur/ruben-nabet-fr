@@ -1,9 +1,8 @@
 <template>
-  <v-container>
+  <v-container class="fluid fill-height">
     <Title title="A propos de moi" />
 
     <v-row
-      fill-height
       align="center"
       justify="center"
       class="mt-sm-15 mt-10"
