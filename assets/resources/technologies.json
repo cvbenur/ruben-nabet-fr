@@ -1,0 +1,138 @@
+{
+  "web": [
+    {
+      "title": "HTML5",
+      "color": "",
+      "textColor": "",
+      "icon": "",
+      "link": ""
+    },
+    {
+      "title": "CSS3",
+      "color": "",
+      "textColor": "",
+      "icon": "",
+      "link": ""
+    },
+    {
+      "title": "JavaScript",
+      "color": "",
+      "textColor": "",
+      "icon": "",
+      "link": ""
+    },
+    {
+      "title": "TypeScript",
+      "color": "",
+      "textColor": "",
+      "icon": "",
+      "link": ""
+    },
+    {
+      "title": "NodeJS",
+      "color": "",
+      "textColor": "",
+      "icon": "",
+      "link": ""
+    },
+    {
+      "title": "VueJS",
+      "color": "",
+      "textColor": "",
+      "icon": "",
+      "link": ""
+    },
+    {
+      "title": "NuxtJS",
+      "color": "",
+      "textColor": "",
+      "icon": "",
+      "link": ""
+    }
+  ],
+  "databases": [
+    {
+      "title": "PostgreSQL",
+      "color": "",
+      "textColor": "",
+      "icon": "",
+      "link": ""
+    },
+    {
+      "title": "Firebase",
+      "color": "",
+      "textColor": "",
+      "icon": "",
+      "link": ""
+    },
+    {
+      "title": "Oracle SQL",
+      "color": "",
+      "textColor": "",
+      "icon": "",
+      "link": ""
+    }
+  ],
+  "deployment": [
+    {
+      "title": "Docker",
+      "color": "",
+      "textColor": "",
+      "icon": "",
+      "link": ""
+    },
+    {
+      "title": "GitLab CI/CD",
+      "color": "",
+      "textColor": "",
+      "icon": "",
+      "link": ""
+    },
+    {
+      "title": "GitHub Actions",
+      "color": "",
+      "textColor": "",
+      "icon": "",
+      "link": ""
+    }
+  ],
+  "devTools": [
+    {
+      "title": "Debian",
+      "color": "",
+      "textColor": "",
+      "icon": "",
+      "link": ""
+    },
+    {
+      "title": "Ubuntu",
+      "color": "",
+      "textColor": "",
+      "icon": "",
+      "link": ""
+    }
+  ],
+  "appDev": [
+    {
+      "title": "C",
+      "color": "",
+      "textColor": "",
+      "icon": "",
+      "link": ""
+    },
+    {
+      "title": "Python",
+      "color": "",
+      "textColor": "",
+      "icon": "",
+      "link": ""
+    },
+    {
+      "title": "Java",
+      "color": "",
+      "textColor": "",
+      "icon": "",
+      "link": ""
+    }
+  ]
+}
