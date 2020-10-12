@@ -2,50 +2,57 @@
   "web": [
     {
       "title": "HTML5",
-      "color": "",
-      "textColor": "",
+      "color": "#E44D26",
+      "textColor": "white",
       "icon": "",
       "link": ""
     },
     {
       "title": "CSS3",
-      "color": "",
-      "textColor": "",
+      "color": "#264DE4",
+      "textColor": "white",
       "icon": "",
       "link": ""
     },
     {
       "title": "JavaScript",
-      "color": "",
-      "textColor": "",
+      "color": "#F5DE19",
+      "textColor": "black",
       "icon": "",
       "link": ""
     },
     {
       "title": "TypeScript",
-      "color": "",
-      "textColor": "",
+      "color": "#007ACC",
+      "textColor": "white",
       "icon": "",
       "link": ""
     },
     {
       "title": "NodeJS",
-      "color": "",
-      "textColor": "",
+      "color": "#3C873A",
+      "textColor": "black",
       "icon": "",
       "link": ""
     },
     {
       "title": "VueJS",
-      "color": "",
-      "textColor": "",
+      "color": "#14B883",
+      "textColor": "white",
       "icon": "",
       "link": ""
     },
     {
       "title": "NuxtJS",
-      "color": "",
-      "textColor": "",
+      "color": "#41b883",
+      "textColor": "white",
+      "icon": "",
+      "link": ""
+    },
+    {
+      "title": "SCSS",
+      "color": "#CD6799",
+      "textColor": "black",
       "icon": "",
       "link": ""
     }
@@ -53,22 +60,22 @@
   "databases": [
     {
       "title": "PostgreSQL",
-      "color": "",
-      "textColor": "",
+      "color": "#336791",
+      "textColor": "white",
       "icon": "",
       "link": ""
     },
     {
       "title": "Firebase",
-      "color": "",
-      "textColor": "",
+      "color": "#FFA000",
+      "textColor": "white",
       "icon": "",
       "link": ""
     },
     {
       "title": "Oracle SQL",
-      "color": "",
-      "textColor": "",
+      "color": "#F80000",
+      "textColor": "white",
       "icon": "",
       "link": ""
     }
@@ -76,22 +83,22 @@
   "deployment": [
     {
       "title": "Docker",
-      "color": "",
-      "textColor": "",
+      "color": "#0DB7ED",
+      "textColor": "white",
       "icon": "",
       "link": ""
     },
     {
       "title": "GitLab CI/CD",
-      "color": "",
-      "textColor": "",
+      "color": "#FC6D26",
+      "textColor": "white",
       "icon": "",
       "link": ""
     },
     {
       "title": "GitHub Actions",
-      "color": "",
-      "textColor": "",
+      "color": "black",
+      "textColor": "white",
       "icon": "",
       "link": ""
     }
@@ -99,15 +106,15 @@
   "devTools": [
     {
       "title": "Debian",
-      "color": "",
-      "textColor": "",
+      "color": "#A80030",
+      "textColor": "white",
       "icon": "",
       "link": ""
     },
     {
       "title": "Ubuntu",
-      "color": "",
-      "textColor": "",
+      "color": "#E95420",
+      "textColor": "white",
       "icon": "",
       "link": ""
     }
@@ -115,22 +122,22 @@
   "appDev": [
     {
       "title": "C",
-      "color": "",
-      "textColor": "",
+      "color": "#283593",
+      "textColor": "white",
       "icon": "",
       "link": ""
     },
     {
       "title": "Python",
-      "color": "",
-      "textColor": "",
+      "color": "#387EB8",
+      "textColor": "white",
       "icon": "",
       "link": ""
     },
     {
       "title": "Java",
-      "color": "",
-      "textColor": "",
+      "color": "#E76F00",
+      "textColor": "white",
       "icon": "",
       "link": ""
     }
