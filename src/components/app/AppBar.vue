@@ -31,7 +31,7 @@
           <nuxt-link
             v-for="(item, i) in items"
             :key="i"
-            :to="`${item.link}`"
+            :to="localePath(`${item.link}`)"
           >
             <v-btn
               class="text-none"
@@ -40,7 +40,7 @@
               :color="item.active ? 'accent' : 'white'"
               @click="setActive(i)"
             >
-              {{ item.title }}
+              {{ $t(`navlinks.${item.title}`) }}_
             </v-btn>
           </nuxt-link>
         </v-row>
@@ -132,14 +132,14 @@
                 <nuxt-link
                   v-for="(item, i) in items"
                   :key="i"
-                  :to="`${item.link}`"
+                  :to="localePath(`${item.link}`)"
                 >
                   <v-list-item
                     text
                     :color="item.active ? 'accent' : 'white'"
                     @click="setActive(i)"
                   >
-                    {{ item.title }}
+                    {{ $t(`navlinks.${item.title}`) }}_
                   </v-list-item>
                 </nuxt-link>
               </v-list-item-group>
@@ -197,31 +197,19 @@ export default class AppBar extends Vue {
 
   private items = [
     {
-      title: 'A propos_',
+      title: 'about',
       link: '/about-me',
       active: false
     },
     {
-      title: 'Technologies_',
+      title: 'technologies',
       link: '/technologies',
       active: false
     },
     {
-      title: 'Mes projets_',
+      title: 'projects',
       link: '/',
       active: false
-    }
-  ];
-
-  private languages = [
-    {
-      title: 'English'
-    },
-    {
-      title: 'French'
-    },
-    {
-      title: 'Español'
     }
   ];
 
