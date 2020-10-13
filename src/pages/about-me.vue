@@ -2,68 +2,74 @@
   <v-container class="fluid fill-height">
     <Title title="A propos de moi" />
 
-    <v-row
-      align="center"
-      justify="center"
-      class="mt-sm-15 mt-10"
-    >
-      <v-col
-        cols="12"
-        sm="6"
-        md="4"
-        class="d-md-inline d-flex flex-row-reverse text-right"
+    <section>
+      <v-row
+        align="center"
+        justify="center"
+        class="mt-sm-15 mt-10"
       >
-        <v-img
-          class="rounded-img shifted-bottom-left"
-          :src="require('@/assets/img/pp_fb.jpg')"
-          alt="Ruben NABET"
-          width="250"
-          aspect-ratio="1"
-        />
-      </v-col>
+        <v-col
+          cols="12"
+          sm="6"
+          md="4"
+          class="d-flex"
+        >
+          <v-img
+            class="rounded-img shifted-bottom-left"
+            :src="require('@/assets/img/pp_fb.jpg')"
+            alt="Ruben NABET"
+            width="250"
+            aspect-ratio="1"
+          />
+        </v-col>
 
-      <v-col
-        cols="
+        <v-col
+          cols="
         12"
-        sm="6"
-        md="6"
-        class="text-left mt-10 mt-md-0"
+          sm="6"
+          md="6"
+          class="text-left mt-10 mt-md-0"
+        >
+          <p class="ma-0">
+            Nam a ultricies mauris, sit amet euismod enim. Integer pulvinar, justo quis mollis rutrum, lacus quam ultrices turpis, ut iaculis sem leo sed neque. Aenean eget commodo lectus. Nam ut diam libero. Nam aliquam metus mauris, id rhoncus arcu blandit id. Nulla sagittis eleifend tortor, vulputate placerat ante auctor sit amet. Aenean fringilla, lacus nec lobortis consectetur, justo massa molestie nisi, id pretium mauris magna a ligula. Aenean nisl sapien, dictum ut dignissim consequat, rhoncus vel ipsum. Fusce convallis dolor id consectetur volutpat.
+          </p>
+        </v-col>
+      </v-row>
+    </section>
+
+    <section>
+      <Title
+        title="Expérience professionnelle"
+        alignment="right"
+      />
+
+      <v-row
+        fill-height
+        align="center"
+        justify="center"
+        class="mt-5"
       >
-        <p class="ma-0">
-          Nam a ultricies mauris, sit amet euismod enim. Integer pulvinar, justo quis mollis rutrum, lacus quam ultrices turpis, ut iaculis sem leo sed neque. Aenean eget commodo lectus. Nam ut diam libero. Nam aliquam metus mauris, id rhoncus arcu blandit id. Nulla sagittis eleifend tortor, vulputate placerat ante auctor sit amet. Aenean fringilla, lacus nec lobortis consectetur, justo massa molestie nisi, id pretium mauris magna a ligula. Aenean nisl sapien, dictum ut dignissim consequat, rhoncus vel ipsum. Fusce convallis dolor id consectetur volutpat.
-        </p>
-      </v-col>
-    </v-row>
+        <Timeline
+          :exps="exps.pro"
+          right
+        />
+      </v-row>
+    </section>
 
-    <Title
-      title="Expérience professionnelle"
-      alignment="right"
-    />
+    <section>
+      <Title title="Formation" />
 
-    <v-row
-      fill-height
-      align="center"
-      justify="center"
-      class="mt-5"
-    >
-      <Timeline
-        :exps="exps.pro"
-        right
-      />
-    </v-row>
-
-    <Title title="Formation" />
-
-    <v-row
-      fill-height
-      align="center"
-      justify="center"
-      class="mt-5"
-    >
-      <Timeline
-        :exps="exps.edu"
-      />
-    </v-row>
+      <v-row
+        fill-height
+        align="center"
+        justify="center"
+        class="mt-5"
+      >
+        <Timeline
+          :exps="exps.edu"
+        />
+      </v-row>
+    </section>
 
     <v-row
       fill-height

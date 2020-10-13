@@ -2,53 +2,69 @@
   <v-container class="fluid fill-height">
     <Title title="Technologies" />
 
-    <TechCategory
-      :technos="web"
-      title="Technologies Web"
-    />
+    <section>
+      <TechCategory
+        :technos="technos.web"
+        title="Technologies Web"
+      />
+    </section>
 
-    <TechCategory
-      :technos="databases"
-      title="Bases de données"
-      alignment="right"
-    />
+    <section>
+      <TechCategory
+        :technos="technos.databases"
+        title="Bases de données"
+        alignment="right"
+      />
+    </section>
 
-    <TechCategory
-      :technos="deployment"
-      title="Déploiement"
-    />
+    <section>
+      <TechCategory
+        :technos="technos.deployment"
+        title="Déploiement"
+      />
+    </section>
 
-    <TechCategory
-      :technos="devTools"
-      title="Outils de développement"
-      alignment="right"
-    />
+    <section>
+      <TechCategory
+        :technos="technos.devTools"
+        title="Outils de développement"
+        alignment="right"
+      />
+    </section>
 
-    <TechCategory
-      :technos="appDev"
-      title="Développement d'applications"
-    />
+    <section>
+      <TechCategory
+        :technos="technos.appDev"
+        title="Développement d'applications"
+      />
+    </section>
   </v-container>
 </template>
 
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
-import { Technology, web, databases, deployment, devTools, appDev } from '@/models/technologies'
+import { Technology, technos } from '@/models/technologies'
 
 @Component({})
 export default class Technologies extends Vue {
-  private web: Array<Technology> = [];
-  private databases: Array<Technology> = [];
-  private deployment: Array<Technology> = [];
-  private devTools: Array<Technology> = [];
-  private appDev: Array<Technology> = [];
+  private technos: {
+    web: Array<Technology>,
+    databases: Array<Technology>,
+    deployment: Array<Technology>,
+    devTools: Array<Technology>,
+    appDev: Array<Technology>,
+  } | null = null;
 
   created () {
-    this.web = web as Array<Technology>
-    this.databases = databases as Array<Technology>
-    this.deployment = deployment as Array<Technology>
-    this.devTools = devTools as Array<Technology>
-    this.appDev = appDev as Array<Technology>
+    if (!this.technos) {
+      this.technos = {
+        web: technos.web as Array<Technology>,
+        databases: technos.databases as Array<Technology>,
+        deployment: technos.deployment as Array<Technology>,
+        devTools: technos.devTools as Array<Technology>,
+        appDev: technos.appDev as Array<Technology>
+      }
+    }
   }
 }
 </script>
