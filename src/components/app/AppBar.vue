@@ -12,7 +12,10 @@
         cols="10"
         md="3"
       >
-        <nuxt-link to="/" @click.native="setActive(-1)">
+        <nuxt-link
+          :to="localePath('/')"
+          @click.native="setActive(-1)"
+        >
           <v-avatar>
             <img
               src="@/assets/img/pp_fb.jpg"
