@@ -57,7 +57,7 @@
           >
             <v-icon
               color="white"
-              @click="$vuetify.theme.dark = !$vuetify.theme.dark"
+              @click="setTheme()"
             >
               {{ $vuetify.theme.dark ? 'far fa-moon' : 'fas fa-sun' }}
             </v-icon>
@@ -135,7 +135,7 @@
               >
                 <v-icon
                   color="white"
-                  @click="$vuetify.theme.dark = !$vuetify.theme.dark"
+                  @click="setTheme()"
                 >
                   {{ $vuetify.theme.dark ? 'far fa-moon' : 'fas fa-sun' }}
                 </v-icon>
@@ -199,6 +199,10 @@ export default class AppBar extends Vue {
         ? this.items[i].active = false
         : this.items[i].active = true
     }
+  }
+
+  setTheme () {
+    this.$vuetify.theme.dark = !this.$vuetify.theme.dark
   }
 }
 </script>
