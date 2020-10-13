@@ -3,7 +3,7 @@
     <AppBar />
 
     <v-main>
-      <v-container fluid>
+      <v-container class="mt-10 mx-auto px-lg-10 px-2 px-sm-8">
         <nuxt />
       </v-container>
     </v-main>
