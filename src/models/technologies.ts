@@ -26,7 +26,7 @@ export class Technology {
   }
 }
 
-export {
+export const technos = {
   web,
   databases,
   deployment,
