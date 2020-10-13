@@ -5,6 +5,7 @@
     :color="techno.pillColor"
     pill
     dark
+    :href="`${techno.link}`"
   >
     <p :class="`ma-0 ${techno.textColor}--text`">
       {{ techno.title }}
