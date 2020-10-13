@@ -17,11 +17,7 @@
       >
         <TechTile
           :techno="tech"
-          :size="120"
-        />
-
-        <TechnoPill
-          :techno="tech"
+          :size="100"
         />
       </v-col>
     </v-row>
