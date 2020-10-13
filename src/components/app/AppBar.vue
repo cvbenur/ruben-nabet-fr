@@ -12,7 +12,10 @@
         cols="10"
         md="3"
       >
-        <nuxt-link to="/" @click.native="setActive(-1)">
+        <nuxt-link
+          :to="localePath('/')"
+          @click.native="setActive(-1)"
+        >
           <v-avatar>
             <img
               src="@/assets/img/pp_fb.jpg"
@@ -31,7 +34,7 @@
           <nuxt-link
             v-for="(item, i) in items"
             :key="i"
-            :to="`${item.link}`"
+            :to="localePath(`${item.link}`)"
           >
             <v-btn
               class="text-none"
@@ -40,7 +43,7 @@
               :color="item.active ? 'accent' : 'white'"
               @click="setActive(i)"
             >
-              {{ item.title }}
+              {{ $t(`navlinks.${item.title}`) }}_
             </v-btn>
           </nuxt-link>
         </v-row>
@@ -63,13 +66,32 @@
             </v-icon>
           </v-btn>
 
-          <v-btn
-            icon
+          <v-menu
+            offset-y
+            transition="slide-y-transition"
           >
-            <v-icon color="white">
-              fas fa-globe
-            </v-icon>
-          </v-btn>
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn
+                icon
+                v-bind="attrs"
+                v-on="on"
+              >
+                <v-icon color="white">
+                  fas fa-globe
+                </v-icon>
+              </v-btn>
+            </template>
+
+            <v-list>
+              <v-list-item
+                v-for="(lang, i) in $i18n.locales"
+                :key="i"
+                :to="switchLocalePath(lang.code)"
+              >
+                <v-list-item-title>{{ lang.name }}</v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-menu>
         </div>
 
         <div class="hidden-md-and-up">
@@ -116,14 +138,14 @@
                 <nuxt-link
                   v-for="(item, i) in items"
                   :key="i"
-                  :to="`${item.link}`"
+                  :to="localePath(`${item.link}`)"
                 >
                   <v-list-item
                     text
                     :color="item.active ? 'accent' : 'white'"
                     @click="setActive(i)"
                   >
-                    {{ item.title }}
+                    {{ $t(`navlinks.${item.title}`) }}_
                   </v-list-item>
                 </nuxt-link>
               </v-list-item-group>
@@ -141,13 +163,32 @@
                 </v-icon>
               </v-btn>
 
-              <v-btn
-                icon
+              <v-menu
+                offset-y
+                transition="slide-y-transition"
               >
-                <v-icon color="white">
-                  fas fa-globe
-                </v-icon>
-              </v-btn>
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn
+                    icon
+                    v-bind="attrs"
+                    v-on="on"
+                  >
+                    <v-icon color="white">
+                      fas fa-globe
+                    </v-icon>
+                  </v-btn>
+                </template>
+
+                <v-list>
+                  <v-list-item
+                    v-for="(lang, i) in $i18n.locales"
+                    :key="i"
+                    :to="switchLocalePath(lang.code)"
+                  >
+                    <v-list-item-title>{{ lang.name }}</v-list-item-title>
+                  </v-list-item>
+                </v-list>
+              </v-menu>
             </div>
           </v-navigation-drawer>
         </div>
@@ -165,34 +206,23 @@ export default class AppBar extends Vue {
 
   private items = [
     {
-      title: 'A propos_',
+      title: 'about',
       link: '/about-me',
       active: false
     },
     {
-      title: 'Technologies_',
+      title: 'technologies',
       link: '/technologies',
       active: false
     },
     {
-      title: 'Mes projets_',
+      title: 'projects',
       link: '/',
       active: false
     }
   ];
 
-  private languages = [
-    {
-      title: 'English'
-    },
-    {
-      title: 'French'
-    },
-    {
-      title: 'Español'
-    }
-  ];
-
+  // Link handling
   setActive (n: number) {
     for (let i = 0; i < this.items.length; i++) {
       i !== n || n === -1
@@ -201,10 +231,12 @@ export default class AppBar extends Vue {
     }
   }
 
+  // Drawer handling
   toggleDrawer () {
     this.drawer = !this.drawer
   }
 
+  // Theme handling
   setTheme () {
     this.$vuetify.theme.dark = !this.$vuetify.theme.dark
     this.toggleDrawer()

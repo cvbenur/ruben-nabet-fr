@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <Title title="A propos de moi" />
+    <Title :title="$t(`pages.about.title`)" />
 
     <section>
       <v-row
@@ -39,7 +39,7 @@
 
     <section>
       <Title
-        title="Expérience professionnelle"
+        :title="$t(`pages.about.pro.title`)"
         alignment="right"
       />
 
@@ -51,13 +51,14 @@
       >
         <Timeline
           :exps="exps.pro"
+          category="pro"
           right
         />
       </v-row>
     </section>
 
     <section>
-      <Title title="Formation" />
+      <Title :title="$t(`pages.about.edu.title`)" />
 
       <v-row
         fill-height
@@ -67,6 +68,7 @@
       >
         <Timeline
           :exps="exps.edu"
+          category="edu"
         />
       </v-row>
     </section>
@@ -87,10 +89,10 @@
           block
           ripple
           large
-          :href="'/docs/Ruben_NABET_CV-FR.pdf'"
+          :href="`/docs/Ruben_NABET_CV-${$t('pages.about.dl.lang')}.pdf`"
           download
         >
-          Télécharger mon CV_
+          {{ $t('pages.about.dl.text') }}_
         </v-btn>
       </v-col>
     </v-row>
@@ -113,7 +115,7 @@
           ripple
           large
         >
-          Me contacter_
+          {{ $t('pages.about.contact.text') }}_
         </v-btn>
       </v-col>
 

@@ -30,9 +30,19 @@ export default class Default extends Vue {
 
   @Watch('$vuetify.theme.dark')
   themeChange (newVal: boolean) : void {
-    this.message = newVal ? 'Dark' : 'Light'
+    const themeMessage = `notifications.theme.${newVal ? 'dark' : 'light'}`
+    this.message = `${this.$t(themeMessage)}`
     this.icon = newVal ? 'far fa-moon' : 'fas fa-sun'
     this.turnOnNotification()
+  }
+
+  @Watch('$i18n.locale')
+  localeChange (newVal: string, oldVal: string) {
+    if (oldVal !== newVal) {
+      this.message = `${this.$t('notifications.locale')}`
+      this.icon = 'fas fa-globe'
+      this.turnOnNotification()
+    }
   }
 
   @Ref() notifSnack!: NotifSnackbar;

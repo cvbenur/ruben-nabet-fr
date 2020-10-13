@@ -1,4 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
+import i18n from './src/config/i18n.config'
 
 export default {
   target: 'static',
@@ -48,19 +49,18 @@ export default {
     [
       'nuxt-i18n',
       {
-        locales: ['en', 'fr'],
-        defaultLocale: 'en',
-        vueI18n: {
-          fallbackLocale: 'en',
-          messages: {
-            en: {
-              greeting: 'Welcome'
-            },
-            fr: {
-              greeting: 'Bienvenue'
-            }
+        defaultLocale: 'fr',
+        locales: [
+          {
+            code: 'en',
+            name: 'English'
+          },
+          {
+            code: 'fr',
+            name: 'Français'
           }
-        }
+        ],
+        vueI18n: i18n
       }
     ]
   ],

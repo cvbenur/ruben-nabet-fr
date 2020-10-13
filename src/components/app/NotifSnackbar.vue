@@ -4,6 +4,7 @@
     :dark="themeDark"
     :color="themeDark ? 'primary' : 'white'"
     :timeout="5000"
+    top
   >
     <v-icon
       color="white"
