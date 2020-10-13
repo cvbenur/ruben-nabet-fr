@@ -12,6 +12,12 @@
     "locale": "Language set to English"
   },
   "pages": {
+    "index": {
+      "mainTitle": {
+        "first": "Full-Stack",
+        "second": "Developer"
+      }
+    },
     "about": {
       "title": "About me",
       "pro": {

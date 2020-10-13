@@ -12,6 +12,12 @@
     "locale": "Langue réglée sur Français."
   },
   "pages": {
+    "index": {
+      "mainTitle": {
+        "first": "Développeur",
+        "second": "Full-Stack"
+      }
+    },
     "about": {
       "title": "A propos de moi",
       "pro": {
