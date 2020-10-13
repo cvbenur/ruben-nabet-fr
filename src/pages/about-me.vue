@@ -1,33 +1,33 @@
 <template>
-  <v-container class="fluid fill-height">
+  <v-container fluid>
     <Title title="A propos de moi" />
 
     <section>
       <v-row
         align="center"
         justify="center"
-        class="mt-sm-15 mt-10"
+        class="mt-sm-15 mt-10 d-flex"
       >
         <v-col
           cols="12"
           sm="6"
-          md="4"
-          class="d-flex"
+          class="d-flex d-inline justify-md-end justify-center"
         >
-          <v-img
-            class="rounded-img shifted-bottom-left"
-            :src="require('@/assets/img/pp_fb.jpg')"
-            alt="Ruben NABET"
-            width="250"
-            aspect-ratio="1"
-          />
+          <div>
+            <v-img
+              class="rounded-img shifted-bottom-left"
+              :src="require('@/assets/img/pp_fb.jpg')"
+              alt="Ruben NABET"
+              width="250"
+              aspect-ratio="1"
+              contain
+            />
+          </div>
         </v-col>
 
         <v-col
-          cols="
-        12"
+          cols="12"
           sm="6"
-          md="6"
           class="text-left mt-10 mt-md-0"
         >
           <p class="ma-0">

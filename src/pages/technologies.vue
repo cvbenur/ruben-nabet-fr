@@ -1,5 +1,5 @@
 <template>
-  <v-container class="fluid fill-height">
+  <v-container class="fluid fill-height d-flex justify-center">
     <Title title="Technologies" />
 
     <section>
