@@ -73,7 +73,7 @@
         </div>
 
         <div class="hidden-md-and-up">
-          <v-app-bar-nav-icon class="white--text" @click.stop="drawer = !drawer" />
+          <v-app-bar-nav-icon class="white--text" @click.stop="toggleDrawer()" />
 
           <v-navigation-drawer
             v-model="drawer"
@@ -97,7 +97,7 @@
                   fab
                   icon
                   class="pr-5 my-1"
-                  @click.stop="drawer = false"
+                  @click.stop="toggleDrawer()"
                 >
                   <v-icon color="white">
                     mdi-close
@@ -201,8 +201,13 @@ export default class AppBar extends Vue {
     }
   }
 
+  toggleDrawer () {
+    this.drawer = !this.drawer
+  }
+
   setTheme () {
     this.$vuetify.theme.dark = !this.$vuetify.theme.dark
+    this.toggleDrawer()
   }
 }
 </script>
