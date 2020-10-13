@@ -5,16 +5,16 @@
       "color": "#E44D26",
       "textColor": "white",
       "pillColor": "#E44D26",
-      "tileColor": "#E44D26",
+      "tileColor": "#ff967a",
       "icon": "html5.svg",
       "link": "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
     },
     {
       "title": "CSS3",
-      "color": "#264DE4",
+      "color": "#2062AF",
       "textColor": "white",
-      "pillColor": "#264DE4",
-      "tileColor": "#264DE4",
+      "pillColor": "#2062AF",
+      "tileColor": "#6eb1ff",
       "icon": "css3.svg",
       "link": "https://developer.mozilla.org/en-US/docs/Archive/CSS3"
     },
@@ -23,7 +23,7 @@
       "color": "#F5DE19",
       "textColor": "black",
       "pillColor": "#F5DE19",
-      "tileColor": "#F5DE19",
+      "tileColor": "#fff5a6",
       "icon": "javascript.svg",
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
     },
@@ -32,16 +32,16 @@
       "color": "#007ACC",
       "textColor": "white",
       "pillColor": "#007ACC",
-      "tileColor": "white",
+      "tileColor": "#85c9ff",
       "icon": "typescript.svg",
       "link": "https://www.typescriptlang.org/"
     },
     {
       "title": "NodeJS",
       "color": "#3C873A",
-      "textColor": "white",
-      "pillColor": "#3C873A",
-      "tileColor": "#3C873A",
+      "textColor": "black",
+      "pillColor": "#8CC84B",
+      "tileColor": "#d5ffa8",
       "icon": "nodejs.svg",
       "link": "https://nodejs.org/"
     },
@@ -50,7 +50,7 @@
       "color": "#14B883",
       "textColor": "white",
       "pillColor": "#14B883",
-      "tileColor": "#14B883",
+      "tileColor": "#95f0c8",
       "icon": "vuejs.svg",
       "link": "https://vuejs.org/"
     },
@@ -59,7 +59,7 @@
       "color": "#41b883",
       "textColor": "white",
       "pillColor": "#41b883",
-      "tileColor": "#41b883",
+      "tileColor": "#95f0c8",
       "icon": "nuxtjs.svg",
       "link": "https://nuxtjs.org/"
     },
@@ -68,7 +68,7 @@
       "color": "#CD6799",
       "textColor": "white",
       "pillColor": "#CD6799",
-      "tileColor": "white",
+      "tileColor": "#ffc2e0",
       "icon": "sass.svg",
       "link": "https://sass-lang.com/"
     }
@@ -79,7 +79,7 @@
       "color": "#336791",
       "textColor": "white",
       "pillColor": "#336791",
-      "tileColor": "#336791",
+      "tileColor": "#6597bf",
       "icon": "postgresql.svg",
       "link": "https://www.postgresql.org/"
     },
@@ -88,7 +88,7 @@
       "color": "#FFA000",
       "textColor": "white",
       "pillColor": "#FFA000",
-      "tileColor": "#FF8A65",
+      "tileColor": "#ffda9c",
       "icon": "firebase.svg",
       "link": "https://firebase.google.com/"
     },
@@ -97,7 +97,7 @@
       "color": "#F80000",
       "textColor": "white",
       "pillColor": "#F80000",
-      "tileColor": "#F80000",
+      "tileColor": "#ff9c9c",
       "icon": "oracle.svg",
       "link": "https://www.oracle.com/database/technologies/appdev/sql.html"
     }
@@ -108,7 +108,7 @@
       "color": "#066DA5",
       "textColor": "white",
       "pillColor": "#066DA5",
-      "tileColor": "#066DA5",
+      "tileColor": "#57c4ff",
       "icon": "docker.svg",
       "link": "https://www.docker.com/"
     },
@@ -117,7 +117,7 @@
       "color": "#FC6D26",
       "textColor": "white",
       "pillColor": "#FC6D26",
-      "tileColor": "#FC6D26",
+      "tileColor": "#ffc0a1",
       "icon": "gitlab.svg",
       "link": "https://about.gitlab.com/"
     },
@@ -126,18 +126,54 @@
       "color": "#171515",
       "textColor": "white",
       "pillColor": "#171515",
-      "tileColor": "#171515",
+      "tileColor": "#383838",
       "icon": "github.svg",
       "link": "https://github.com/"
     }
   ],
   "devTools": [
     {
+      "title": "VSCode",
+      "color": "#A80030",
+      "textColor": "white",
+      "pillColor": "#0078d7",
+      "tileColor": "#85c9ff",
+      "icon": "vscode.svg",
+      "link": "https://code.visualstudio.com/"
+    },
+    {
+      "title": "WebStorm",
+      "color": "#A80030",
+      "textColor": "white",
+      "pillColor": "#00b4bd",
+      "tileColor": "#bdfcff",
+      "icon": "webstorm.svg",
+      "link": "https://www.jetbrains.com/webstorm/"
+    },
+    {
+      "title": "IntelliJ IDEA",
+      "color": "#A80030",
+      "textColor": "white",
+      "pillColor": "#FE315D",
+      "tileColor": "#ff7d99",
+      "icon": "intellij.svg",
+      "link": "https://www.jetbrains.com/idea/"
+    },
+    {
+      "title": "DataGrip",
+      "color": "#A80030",
+      "textColor": "black",
+      "pillColor": "#22D88F",
+      "tileColor": "#80ffcc",
+      "icon": "datagrip.svg",
+      "link": "https://www.jetbrains.com/datagrip/"
+    },
+    {
       "title": "Debian",
       "color": "#A80030",
       "textColor": "white",
       "pillColor": "#A80030",
-      "tileColor": "#A80030",
+      "tileColor": "#ff85a8",
       "icon": "debian.svg",
       "link": "https://www.debian.org/"
     },
@@ -146,7 +182,7 @@
       "color": "#E95420",
       "textColor": "white",
       "pillColor": "#E95420",
-      "tileColor": "#E95420",
+      "tileColor": "#ff8f69",
       "icon": "ubuntu.svg",
       "link": "https://ubuntu.com/"
     }
@@ -157,7 +193,7 @@
       "color": "#283593",
       "textColor": "white",
       "pillColor": "#283593",
-      "tileColor": "#283593",
+      "tileColor": "#6875d9",
       "icon": "c.svg",
       "link": "https://en.wikipedia.org/wiki/C_(programming_language)/"
     },
@@ -165,8 +201,8 @@
       "title": "Python",
       "color": "#387EB8",
       "textColor": "white",
-      "pillColor": "#387EB8",
-      "tileColor": "#387EB8",
+      "pillColor": "#306998",
+      "tileColor": "#62a0d1",
       "icon": "python.svg",
       "link": "https://www.python.org/"
     },
