@@ -63,13 +63,29 @@
             </v-icon>
           </v-btn>
 
-          <v-btn
-            icon
-          >
-            <v-icon color="white">
-              fas fa-globe
-            </v-icon>
-          </v-btn>
+          <v-menu offset-y>
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn
+                icon
+                v-bind="attrs"
+                v-on="on"
+              >
+                <v-icon color="white">
+                  fas fa-globe
+                </v-icon>
+              </v-btn>
+            </template>
+
+            <v-list>
+              <v-list-item
+                v-for="(lang, i) in $i18n.locales"
+                :key="i"
+                :to="switchLocalePath(lang.code)"
+              >
+                <v-list-item-title>{{ lang.name }}</v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-menu>
         </div>
 
         <div class="hidden-md-and-up">
@@ -141,13 +157,29 @@
                 </v-icon>
               </v-btn>
 
-              <v-btn
-                icon
-              >
-                <v-icon color="white">
-                  fas fa-globe
-                </v-icon>
-              </v-btn>
+              <v-menu offset-x>
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn
+                    icon
+                    v-bind="attrs"
+                    v-on="on"
+                  >
+                    <v-icon color="white">
+                      fas fa-globe
+                    </v-icon>
+                  </v-btn>
+                </template>
+
+                <v-list>
+                  <v-list-item
+                    v-for="(lang, i) in $i18n.locales"
+                    :key="i"
+                    :to="switchLocalePath(lang.code)"
+                  >
+                    <v-list-item-title>{{ lang.name }}</v-list-item-title>
+                  </v-list-item>
+                </v-list>
+              </v-menu>
             </div>
           </v-navigation-drawer>
         </div>
@@ -193,6 +225,7 @@ export default class AppBar extends Vue {
     }
   ];
 
+  // Link handling
   setActive (n: number) {
     for (let i = 0; i < this.items.length; i++) {
       i !== n || n === -1
@@ -201,10 +234,12 @@ export default class AppBar extends Vue {
     }
   }
 
+  // Drawer handling
   toggleDrawer () {
     this.drawer = !this.drawer
   }
 
+  // Theme handling
   setTheme () {
     this.$vuetify.theme.dark = !this.$vuetify.theme.dark
     this.toggleDrawer()
