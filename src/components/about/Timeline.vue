@@ -35,13 +35,13 @@
                 <v-card-title
                   class="headline text-h5 font-weight-bold"
                 >
-                  {{ exp.title }}_
+                  {{ $t(`pages.about.${category}.items[${i}].title`) }}_
                 </v-card-title>
                 <v-card-text class="pt-4">
-                  {{ exp.date }}
+                  {{ $t(`pages.about.${category}.items[${i}].date`) }}
                 </v-card-text>
                 <v-card-text>
-                  {{ exp.description }}
+                  {{ $t(`pages.about.${category}.items[${i}].description`) }}
                 </v-card-text>
               </v-card>
             </v-timeline-item>
@@ -60,6 +60,9 @@ import { Experience } from '@/models/experience'
 export default class Timeline extends Vue {
   @Prop({ required: true })
   exps!: Array<Experience>;
+
+  @Prop({ required: true })
+  category!: string;
 
   @Prop({ required: false, default: false })
   right!: boolean;
