@@ -7,32 +7,24 @@
         :technos="technos.web"
         title="Technologies Web"
       />
-    </section>
 
-    <section>
       <TechCategory
         :technos="technos.databases"
         title="Bases de données"
         alignment="right"
       />
-    </section>
 
-    <section>
       <TechCategory
         :technos="technos.deployment"
         title="Déploiement"
       />
-    </section>
 
-    <section>
       <TechCategory
         :technos="technos.devTools"
         title="Outils de développement"
         alignment="right"
       />
-    </section>
 
-    <section>
       <TechCategory
         :technos="technos.appDev"
         title="Développement d'applications"
