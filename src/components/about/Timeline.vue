@@ -20,9 +20,9 @@
             :key="i"
             v-model="isActive"
             :options="{
-              threshold: .8
+              threshold: .5
             }"
-            transition="fade-transition"
+            transition="scroll-y-reverse-transition"
           >
             <v-timeline-item
               color="secondary"
