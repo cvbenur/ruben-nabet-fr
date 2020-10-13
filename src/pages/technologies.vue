@@ -1,33 +1,33 @@
 <template>
   <v-container class="fluid fill-height d-flex justify-center">
-    <Title title="Technologies" />
+    <Title :title="$t(`pages.technologies.title`)" />
 
     <section>
       <TechCategory
         :technos="technos.web"
-        title="Technologies Web"
+        :title="$t(`pages.technologies.categories.web`)"
       />
 
       <TechCategory
         :technos="technos.databases"
-        title="Bases de données"
+        :title="$t(`pages.technologies.categories.db`)"
         alignment="right"
       />
 
       <TechCategory
         :technos="technos.deployment"
-        title="Déploiement"
+        :title="$t(`pages.technologies.categories.deployment`)"
       />
 
       <TechCategory
         :technos="technos.devTools"
-        title="Outils de développement"
+        :title="$t(`pages.technologies.categories.devTools`)"
         alignment="right"
       />
 
       <TechCategory
         :technos="technos.appDev"
-        title="Développement d'applications"
+        :title="$t(`pages.technologies.categories.appDev`)"
       />
     </section>
   </v-container>
