@@ -34,7 +34,7 @@
 
         <v-row class="mx-0">
           <p class="text-sm-h4 text-h5 font-weight-thin ma-0">
-            Développeur <b class="font-weight-bold text-custom-blue">Full-Stack</b>
+            {{ `${$t('pages.index.mainTitle.first')} ` }}<b class="font-weight-bold text-custom-blue">{{ $t('pages.index.mainTitle.second') }}</b>
           </p>
         </v-row>
       </v-col>
