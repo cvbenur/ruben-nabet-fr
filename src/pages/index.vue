@@ -6,8 +6,9 @@
     >
       <v-col
         cols="12"
-        sm="2"
-        class="d-inline d-sm-flex flex-row-reverse text-center"
+        sm="4"
+        lg="5"
+        class="d-inline-flex justify-center justify-sm-end text-center"
       >
         <div class="pa-1 accent rounded-circle d-inline-block">
           <v-avatar
@@ -24,7 +25,8 @@
 
       <v-col
         cols="12"
-        sm="4"
+        sm="8"
+        lg="7"
       >
         <v-row class="mx-0 mb-4">
           <p class="text-h3 font-weight-thin ma-0">
