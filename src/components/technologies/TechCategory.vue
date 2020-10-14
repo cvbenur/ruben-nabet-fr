@@ -17,7 +17,7 @@
       >
         <TechTile
           :techno="tech"
-          :size="100"
+          :size="90"
         />
       </v-col>
     </v-row>
