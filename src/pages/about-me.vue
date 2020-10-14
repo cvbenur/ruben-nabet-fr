@@ -12,7 +12,7 @@
           cols="6"
           sm="6"
           md="4"
-          lg="2"
+          lg="3"
           class="d-flex flex-row-reverse"
         >
           <v-img
@@ -114,24 +114,27 @@
           outlined
           ripple
           large
+          nuxt
+          :to="localePath('contact')"
         >
-          {{ $t('pages.about.contact.text') }}_
+          {{ $t('pages.contact.text') }}_
         </v-btn>
       </v-col>
 
       <v-col
-        cols="12"
-        sm="3"
-        class="d-flex justify-space-around"
+        v-for="(social, i) in socials"
+        :key="i"
+        cols="4"
+        sm="1"
       >
         <v-btn
-          v-for="(social, i) in socials"
-          :key="i"
           color="#6699CC"
           ripple
-          large
+          small
           :href="`${social.link}`"
           target="_blank"
+          fab
+          :elevation="0"
         >
           <v-icon color="white">
             {{ social.icon }}

@@ -3,8 +3,14 @@
     <AppBar />
 
     <v-main>
-      <v-container class="mt-10 mx-auto px-lg-10 px-2 px-sm-8">
-        <nuxt />
+      <v-container fluid>
+        <v-row align="center" justify="center">
+          <v-col cols="12" sm="8">
+            <v-card class="px-md-5">
+              <nuxt />
+            </v-card>
+          </v-col>
+        </v-row>
         <NotifSnackbar
           ref="notifSnack"
           :message="message"

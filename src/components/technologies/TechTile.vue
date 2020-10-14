@@ -9,8 +9,8 @@
         <v-row align="center" justify="center">
           <div :class="`mx-0 shifted-bottom-${shift}`">
             <v-card
-              width="120"
-              height="120"
+              width="110"
+              height="110"
               :color="techno.tileColor"
               rounded
               hover

@@ -3,6 +3,7 @@
     app
     color="black"
     height="80px"
+    class="px-2"
   >
     <v-row
       justify="space-between"

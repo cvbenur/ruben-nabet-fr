@@ -2,7 +2,7 @@
   <v-snackbar
     v-model="snackbar"
     :dark="themeDark"
-    :color="themeDark ? 'primary' : 'white'"
+    color="secondary"
     :timeout="5000"
     top
   >
@@ -17,7 +17,7 @@
 
     <template v-slot:action="{ attrs }">
       <v-btn
-        color="secondary"
+        dark
         text
         v-bind="attrs"
         class="text--none"
