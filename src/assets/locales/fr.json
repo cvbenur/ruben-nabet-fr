@@ -86,9 +86,6 @@
       "dl": {
         "text": "Télécharger mon CV",
         "lang": "FR"
-      },
-      "contact": {
-        "text": "Me contacter"
       }
     },
     "technologies": {
@@ -99,6 +96,18 @@
         "db": "Bases de Données",
         "devTools": "Outils de Développement",
         "appDev": "Développement d'Applications"
+      }
+    },
+    "contact": {
+      "text": "Me contacter",
+      "fields": {
+        "name": "Votre nom",
+        "email": "Votre adresse email",
+        "message": "Votre message"
+      },
+      "rules": {
+        "required": "Ce champ doit être rempli.",
+        "email": "Ce champs doit contenir une adresse email valide."
       }
     }
   },

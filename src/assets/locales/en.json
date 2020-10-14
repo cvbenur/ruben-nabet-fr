@@ -86,9 +86,6 @@
       "dl": {
         "text": "Download my resume",
         "lang": "EN"
-      },
-      "contact": {
-        "text": "Get in touch with me"
       }
     },
     "technologies": {
@@ -99,6 +96,18 @@
         "db": "Databases",
         "devTools": "Development Tools",
         "appDev": "App Development"
+      }
+    },
+    "contact": {
+      "text": "Get in touch with me",
+      "fields": {
+        "name": "Your name",
+        "email": "Your email address",
+        "message": "Your message"
+      },
+      "rules": {
+        "required": "This field must be filled out.",
+        "email": "This field must contain a valid email address."
       }
     }
   },
