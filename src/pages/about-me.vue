@@ -31,7 +31,7 @@
           class="d-flex flex-row mt-0"
         >
           <p class="ma-0">
-            Nam a ultricies mauris, sit amet euismod enim. Integer pulvinar, justo quis mollis rutrum, lacus quam ultrices turpis, ut iaculis sem leo sed neque. Aenean eget commodo lectus. Nam ut diam libero. Nam aliquam metus mauris, id rhoncus arcu blandit id. Nulla sagittis eleifend tortor, vulputate placerat ante auctor sit amet. Aenean fringilla, lacus nec lobortis consectetur, justo massa molestie nisi, id pretium mauris magna a ligula. Aenean nisl sapien, dictum ut dignissim consequat, rhoncus vel ipsum. Fusce convallis dolor id consectetur volutpat.
+            {{ $t('pages.about.paragraphs.first') }}
           </p>
         </v-col>
       </v-row>
