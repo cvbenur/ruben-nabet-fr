@@ -144,7 +144,7 @@
 
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
-import { Experience, professionalExperiences, education } from '@/models/experience'
+import { Experience, exps } from '@/models/experience'
 
 @Component({})
 export default class About extends Vue {
@@ -169,14 +169,15 @@ export default class About extends Vue {
   private exps: {
   pro: Array<Experience>,
   edu: Array<Experience>
-  } = {
-    pro: [],
-    edu: []
-  };
+  } | null = null;
 
   created () {
-    professionalExperiences.forEach(exp => this.exps.pro.push(new Experience(exp.title, exp.description, exp.date)))
-    education.forEach(exp => this.exps.edu.push(new Experience(exp.title, exp.description, exp.date)))
+    if (!this.exps) {
+      this.exps = {
+        pro: (exps.professionalExperiences as unknown) as Array<Experience>,
+        edu: (exps.education as unknown) as Array<Experience>
+      }
+    }
   }
 }
 </script>

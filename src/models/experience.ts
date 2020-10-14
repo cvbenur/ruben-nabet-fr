@@ -12,7 +12,7 @@ export class Experience {
   }
 }
 
-export {
+export const exps = {
   professionalExperiences,
   education
 }
