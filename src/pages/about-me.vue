@@ -9,26 +9,26 @@
         class="mt-sm-15 mt-10 d-flex"
       >
         <v-col
-          cols="12"
+          cols="6"
           sm="6"
-          class="d-flex d-inline justify-md-end justify-center"
+          md="4"
+          lg="2"
+          class="d-flex flex-row-reverse"
         >
-          <div>
-            <v-img
-              class="rounded-img shifted-bottom-left"
-              :src="require('@/assets/img/pp_fb.jpg')"
-              alt="Ruben NABET"
-              width="250"
-              aspect-ratio="1"
-              contain
-            />
-          </div>
+          <v-img
+            class="rounded-img shifted-bottom-left"
+            :src="require('@/assets/img/pp_fb.jpg')"
+            alt="Ruben NABET"
+            width="250"
+            aspect-ratio="1"
+            contain
+          />
         </v-col>
 
         <v-col
           cols="12"
           sm="6"
-          class="text-left mt-10 mt-md-0"
+          class="d-flex flex-row mt-0"
         >
           <p class="ma-0">
             Nam a ultricies mauris, sit amet euismod enim. Integer pulvinar, justo quis mollis rutrum, lacus quam ultrices turpis, ut iaculis sem leo sed neque. Aenean eget commodo lectus. Nam ut diam libero. Nam aliquam metus mauris, id rhoncus arcu blandit id. Nulla sagittis eleifend tortor, vulputate placerat ante auctor sit amet. Aenean fringilla, lacus nec lobortis consectetur, justo massa molestie nisi, id pretium mauris magna a ligula. Aenean nisl sapien, dictum ut dignissim consequat, rhoncus vel ipsum. Fusce convallis dolor id consectetur volutpat.
