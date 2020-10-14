@@ -37,7 +37,13 @@
 import { Vue, Component } from 'vue-property-decorator'
 import { Technology, technos } from '@/models/technologies'
 
-@Component({})
+@Component({
+  head (): object {
+    return {
+      title: this.$i18n.t('pages.technologies.title')
+    }
+  }
+})
 export default class Technologies extends Vue {
   private technos: {
     web: Array<Technology>,

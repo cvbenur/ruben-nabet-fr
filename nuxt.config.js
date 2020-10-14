@@ -6,7 +6,7 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    titleTemplate: '%s | Ruben Nabet 😋',
+    titleTemplate: '%s | Ruben NABET_ 😋',
     title: '',
     meta: [
       { charset: 'utf-8' },

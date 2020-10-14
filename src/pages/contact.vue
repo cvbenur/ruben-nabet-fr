@@ -17,7 +17,13 @@
 <script lang="ts">
 import { Vue, Component, Emit } from 'vue-property-decorator'
 
-@Component({})
+@Component({
+  head (): object {
+    return {
+      title: this.$i18n.t('pages.contact.title')
+    }
+  }
+})
 export default class Contact extends Vue {
   private msgData: {
     name: string,

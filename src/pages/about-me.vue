@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <Title :title="$t(`pages.about.title`)" />
+    <Title :title="$t(`pages.about.heading`)" />
 
     <section>
       <v-row
@@ -149,7 +149,13 @@
 import { Vue, Component } from 'vue-property-decorator'
 import { Experience, exps } from '@/models/experience'
 
-@Component({})
+@Component({
+  head (): object {
+    return {
+      title: this.$i18n.t('pages.about.title')
+    }
+  }
+})
 export default class About extends Vue {
   private socials = [
     {
