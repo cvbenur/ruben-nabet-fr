@@ -33,14 +33,20 @@
         :rules="rules.reqTxt"
       />
 
-      <v-btn
-        color="secondary"
-        class="text-none"
-        outlined
-        type="submit"
-      >
-        {{ $t('pages.contact.text') }}_
-      </v-btn>
+      <v-row align="center" justify="center">
+        <v-col cols="12" sm="4">
+          <v-btn
+            color="secondary"
+            class="text-none mt-5"
+            outlined
+            large
+            type="submit"
+            block
+          >
+            {{ $t('pages.contact.send') }}_
+          </v-btn>
+        </v-col>
+      </v-row>
     </v-form>
   </v-container>
 </template>
