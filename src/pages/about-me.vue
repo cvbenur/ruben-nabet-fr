@@ -115,7 +115,7 @@
           ripple
           large
         >
-          {{ $t('pages.about.contact.text') }}_
+          {{ $t('pages.contact.text') }}_
         </v-btn>
       </v-col>
 
