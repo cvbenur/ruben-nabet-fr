@@ -100,6 +100,7 @@
     },
     "contact": {
       "text": "Get in touch with me",
+      "paragraph": "Just shoot me a message, I'll be sure to get back to you !",
       "fields": {
         "name": "Your name",
         "email": "Your email address",
@@ -108,7 +109,8 @@
       "rules": {
         "required": "This field must be filled out.",
         "email": "This field must contain a valid email address."
-      }
+      },
+      "send": "Send"
     }
   },
   "footer": {
