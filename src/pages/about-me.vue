@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <Title :title="$t(`pages.about.heading`)" />
+    <Heading :title="$t(`pages.about.heading`)" />
 
     <section>
       <v-row

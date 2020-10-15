@@ -1,6 +1,6 @@
 <template>
   <v-container class="fluid fill-height d-flex justify-center">
-    <Title :title="$t(`pages.technologies.title`)" />
+    <Heading :title="$t(`pages.technologies.title`)" />
 
     <section>
       <TechCategory
