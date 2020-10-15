@@ -15,6 +15,7 @@
               rounded
               hover
               :href="`${techno.link}`"
+              target="_blank"
             >
               <v-container class="fluid fill-height py-0">
                 <v-row

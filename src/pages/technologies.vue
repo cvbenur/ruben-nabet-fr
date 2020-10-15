@@ -56,11 +56,11 @@ export default class Technologies extends Vue {
   created () {
     if (!this.technos) {
       this.technos = {
-        web: technos.web as Array<Technology>,
-        databases: technos.databases as Array<Technology>,
-        deployment: technos.deployment as Array<Technology>,
-        devTools: technos.devTools as Array<Technology>,
-        appDev: technos.appDev as Array<Technology>
+        web: technos.web,
+        databases: technos.databases,
+        deployment: technos.deployment,
+        devTools: technos.devTools,
+        appDev: technos.appDev
       }
     }
   }

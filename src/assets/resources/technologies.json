@@ -2,7 +2,6 @@
   "web": [
     {
       "title": "HTML5",
-      "color": "#E44D26",
       "textColor": "white",
       "pillColor": "#E44D26",
       "tileColor": "#ff967a",
@@ -11,7 +10,6 @@
     },
     {
       "title": "CSS3",
-      "color": "#2062AF",
       "textColor": "white",
       "pillColor": "#2062AF",
       "tileColor": "#6eb1ff",
@@ -20,7 +18,6 @@
     },
     {
       "title": "JavaScript",
-      "color": "#F5DE19",
       "textColor": "black",
       "pillColor": "#F5DE19",
       "tileColor": "#fff5a6",
@@ -29,7 +26,6 @@
     },
     {
       "title": "TypeScript",
-      "color": "#007ACC",
       "textColor": "white",
       "pillColor": "#007ACC",
       "tileColor": "#85c9ff",
@@ -38,7 +34,6 @@
     },
     {
       "title": "NodeJS",
-      "color": "#3C873A",
       "textColor": "black",
       "pillColor": "#8CC84B",
       "tileColor": "#d5ffa8",
@@ -47,7 +42,6 @@
     },
     {
       "title": "VueJS",
-      "color": "#14B883",
       "textColor": "white",
       "pillColor": "#14B883",
       "tileColor": "#95f0c8",
@@ -56,7 +50,6 @@
     },
     {
       "title": "NuxtJS",
-      "color": "#41b883",
       "textColor": "white",
       "pillColor": "#41b883",
       "tileColor": "#95f0c8",
@@ -65,7 +58,6 @@
     },
     {
       "title": "SCSS",
-      "color": "#CD6799",
       "textColor": "white",
       "pillColor": "#CD6799",
       "tileColor": "#ffc2e0",
@@ -76,7 +68,6 @@
   "databases": [
     {
       "title": "PostgreSQL",
-      "color": "#336791",
       "textColor": "white",
       "pillColor": "#336791",
       "tileColor": "#6597bf",
@@ -85,7 +76,6 @@
     },
     {
       "title": "Firebase",
-      "color": "#FFA000",
       "textColor": "white",
       "pillColor": "#FFA000",
       "tileColor": "#ffda9c",
@@ -94,7 +84,6 @@
     },
     {
       "title": "Oracle SQL",
-      "color": "#F80000",
       "textColor": "white",
       "pillColor": "#F80000",
       "tileColor": "#ff9c9c",
@@ -105,7 +94,6 @@
   "deployment": [
     {
       "title": "Docker",
-      "color": "#066DA5",
       "textColor": "white",
       "pillColor": "#066DA5",
       "tileColor": "#57c4ff",
@@ -114,7 +102,6 @@
     },
     {
       "title": "GitLab CI/CD",
-      "color": "#FC6D26",
       "textColor": "white",
       "pillColor": "#FC6D26",
       "tileColor": "#ffc0a1",
@@ -123,7 +110,6 @@
     },
     {
       "title": "GitHub Actions",
-      "color": "#171515",
       "textColor": "white",
       "pillColor": "#171515",
       "tileColor": "#383838",
@@ -134,7 +120,6 @@
   "devTools": [
     {
       "title": "VSCode",
-      "color": "#A80030",
       "textColor": "white",
       "pillColor": "#0078d7",
       "tileColor": "#85c9ff",
@@ -143,7 +128,6 @@
     },
     {
       "title": "WebStorm",
-      "color": "#A80030",
       "textColor": "white",
       "pillColor": "#00b4bd",
       "tileColor": "#bdfcff",
@@ -152,7 +136,6 @@
     },
     {
       "title": "IntelliJ IDEA",
-      "color": "#A80030",
       "textColor": "white",
       "pillColor": "#FE315D",
       "tileColor": "#ff7d99",
@@ -161,7 +144,6 @@
     },
     {
       "title": "DataGrip",
-      "color": "#A80030",
       "textColor": "black",
       "pillColor": "#22D88F",
       "tileColor": "#80ffcc",
@@ -170,7 +152,6 @@
     },
     {
       "title": "Debian",
-      "color": "#A80030",
       "textColor": "white",
       "pillColor": "#A80030",
       "tileColor": "#ff85a8",
@@ -179,7 +160,6 @@
     },
     {
       "title": "Ubuntu",
-      "color": "#E95420",
       "textColor": "white",
       "pillColor": "#E95420",
       "tileColor": "#ff8f69",
@@ -190,7 +170,6 @@
   "appDev": [
     {
       "title": "C",
-      "color": "#283593",
       "textColor": "white",
       "pillColor": "#283593",
       "tileColor": "#6875d9",
@@ -199,7 +178,6 @@
     },
     {
       "title": "Python",
-      "color": "#387EB8",
       "textColor": "white",
       "pillColor": "#306998",
       "tileColor": "#62a0d1",
@@ -208,10 +186,9 @@
     },
     {
       "title": "Java",
-      "color": "#E76F00",
       "textColor": "orange",
       "pillColor": "white",
-      "tileColor": "white",
+      "tileColor": "#ffc294",
       "icon": "java.svg",
       "link": "https://www.java.com/"
     }
