@@ -168,8 +168,8 @@ export default class About extends Vue {
   created () {
     if (!this.exps) {
       this.exps = {
-        pro: (exps.professionalExperiences as unknown) as Array<Experience>,
-        edu: (exps.education as unknown) as Array<Experience>
+        pro: exps.pro,
+        edu: exps.edu
       }
     }
 

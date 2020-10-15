@@ -13,6 +13,6 @@ export class Experience {
 }
 
 export const exps = {
-  professionalExperiences,
-  education
+  pro: professionalExperiences as unknown as Array<Experience>,
+  edu: education as unknown as Array<Experience>
 }
