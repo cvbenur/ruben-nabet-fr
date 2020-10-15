@@ -81,7 +81,7 @@
     >
       <v-col
         cols="12"
-        sm="3"
+        sm="4"
       >
         <v-btn
           color="secondary"
@@ -105,7 +105,7 @@
     >
       <v-col
         cols="12"
-        sm="3"
+        sm="4"
       >
         <v-btn
           color="secondary"
@@ -127,19 +127,10 @@
         cols="4"
         sm="1"
       >
-        <v-btn
-          color="#6699CC"
-          ripple
-          small
-          :href="`${social.link}`"
-          target="_blank"
-          fab
-          :elevation="0"
-        >
-          <v-icon color="white">
-            {{ social.icon }}
-          </v-icon>
-        </v-btn>
+        <SocialIcon
+          :icon="social.icon"
+          :link="social.link"
+        />
       </v-col>
     </v-row>
   </v-container>
