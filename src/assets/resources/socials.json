@@ -1,0 +1,22 @@
+{
+  "socials": [
+    {
+      "title": "LinkedIn",
+      "handle": "@ruben-nabet",
+      "icon": "fab fa-linkedin-in",
+      "link": "https://linkedin.com/in/ruben-nabet"
+    },
+    {
+      "title": "GitHub",
+      "handle": "@cvbenur",
+      "icon": "fab fa-github-alt",
+      "link": "https://github.com/cvbenur"
+    },
+    {
+      "title": "SoundCloud",
+      "handle": "@benur_music",
+      "icon": "fab fa-soundcloud",
+      "link": "https://soundcloud.com/benur_music"
+    }
+  ]
+}
