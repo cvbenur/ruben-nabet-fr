@@ -148,6 +148,7 @@
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
 import { Experience, exps } from '@/models/experience'
+import { Social, socials } from '@/models/socials'
 
 @Component({
   head (): object {
@@ -157,23 +158,7 @@ import { Experience, exps } from '@/models/experience'
   }
 })
 export default class About extends Vue {
-  private socials = [
-    {
-      title: 'LinkedIn',
-      icon: 'fab fa-linkedin-in',
-      link: 'https://linkedin.com/in/ruben-nabet'
-    },
-    {
-      title: 'GitHub',
-      icon: 'fab fa-github-alt',
-      link: 'https://github.com/cvbenur'
-    },
-    {
-      title: 'SoundCloud',
-      icon: 'fab fa-soundcloud',
-      link: 'https://soundcloud.com/benur_music'
-    }
-  ];
+  private socials: Array<Social> | null = null;
 
   private exps: {
   pro: Array<Experience>,
@@ -186,6 +171,10 @@ export default class About extends Vue {
         pro: (exps.professionalExperiences as unknown) as Array<Experience>,
         edu: (exps.education as unknown) as Array<Experience>
       }
+    }
+
+    if (!this.socials) {
+      this.socials = socials
     }
   }
 }
