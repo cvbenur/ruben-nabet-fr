@@ -1,6 +1,5 @@
 <template>
   <v-row
-    fill-height
     align="center"
     :justify="alignment === 'left' ? 'start' : 'end'"
     class="my-5 mx-0"
