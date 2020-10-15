@@ -8,16 +8,14 @@ import {
 
 export class Technology {
   title: string;
-  color: string;
   textColor: string;
   pillColor: string;
   tileColor: string;
   icon: string;
   link: string;
 
-  constructor (title: string, color: string, textColor: string, pillColor: string, tileColor: string, icon: string, link: string) {
+  constructor (title: string, textColor: string, pillColor: string, tileColor: string, icon: string, link: string) {
     this.title = title
-    this.color = color
     this.textColor = textColor
     this.pillColor = pillColor
     this.tileColor = tileColor
