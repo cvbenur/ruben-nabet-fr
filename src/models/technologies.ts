@@ -26,10 +26,14 @@ export class Technology {
   }
 }
 
-export const technos = {
-  web,
-  databases,
-  deployment,
-  devTools,
-  appDev
+const technos = {
+  web: web as unknown as Array<Technology>,
+  databases: databases as unknown as Array<Technology>,
+  deployment: deployment as unknown as Array<Technology>,
+  devTools: devTools as unknown as Array<Technology>,
+  appDev: appDev as unknown as Array<Technology>
+}
+
+export {
+  technos
 }
