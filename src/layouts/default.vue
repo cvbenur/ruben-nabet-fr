@@ -13,7 +13,7 @@
             sm="8"
           >
             <v-card
-              class="px-md-5"
+              class="px-md-5 mb-10 mb-md-0"
               dark
             >
               <nuxt />
