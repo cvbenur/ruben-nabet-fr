@@ -116,10 +116,42 @@
       "send": "Send"
     },
     "projects": {
-      "title": "My projects"
+      "title": "My projects",
+      "heading": "My projects"
+    },
+    "legals": {
+      "heading": "Legal notice",
+      "paragraphs": {
+        "first": "In compliance with the dispositions taken by French law n° 2004-575 of June 21st, 2004 for the trust in the digital economy, users of the website ruben-nabet.fr are hereby informed of the identity of the various parties involved in its realization and its maintenance.",
+        "edition": {
+          "title": "Website's edition",
+          "text": "The website ruben-nabet.fr is a personal website, edited personally by Ruben NABET."
+        },
+        "publishing": {
+          "title": "Website's publishing",
+          "text": "The website is published personally by Ruben NABET."
+        },
+        "hosting": {
+          "title": "Hosting",
+          "text": "The website Ruben NABET is hosted by ______, located at :",
+          "address": {
+            "street": "",
+            "city": "",
+            "country": ""
+          }
+        },
+        "contact": {
+          "title": "Get in touch with me",
+          "text": "Via email"
+        }
+      }
     }
   },
   "footer": {
-    "legals": "Legal mentions"
+    "legals": "Legal mentions",
+    "credits": {
+      "first": "Designed & powered with",
+      "second": "by"
+    }
   }
 }
