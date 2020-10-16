@@ -114,6 +114,9 @@
         "email": "Ce champs doit contenir une adresse email valide."
       },
       "send": "Envoyer"
+    },
+    "projects": {
+      "title": "Mes projets"
     }
   },
   "footer": {

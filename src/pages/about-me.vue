@@ -16,7 +16,7 @@
           class="d-flex flex-row-reverse"
         >
           <v-img
-            class="rounded-img shifted-bottom-left"
+            class="custom-rounded shifted-bottom-left"
             :src="require('@/assets/img/pp_fb.jpg')"
             alt="Ruben NABET"
             width="250"

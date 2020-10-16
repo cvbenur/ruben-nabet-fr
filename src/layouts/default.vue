@@ -4,9 +4,18 @@
 
     <v-main>
       <v-container fluid>
-        <v-row align="center" justify="center">
-          <v-col cols="12" sm="8">
-            <v-card class="px-md-5">
+        <v-row
+          align="center"
+          justify="center"
+        >
+          <v-col
+            cols="12"
+            sm="8"
+          >
+            <v-card
+              class="px-md-5"
+              dark
+            >
               <nuxt />
             </v-card>
           </v-col>

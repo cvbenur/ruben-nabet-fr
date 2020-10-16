@@ -38,7 +38,7 @@
           <v-btn
             color="secondary"
             class="text-none mt-5"
-            outlined
+            elevation="0"
             large
             type="submit"
             block
