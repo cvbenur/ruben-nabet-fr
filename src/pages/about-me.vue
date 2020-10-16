@@ -129,6 +129,7 @@
       >
         <SocialIcon
           :icon="social.icon"
+          :title="social.title"
           :link="social.link"
         />
       </v-col>
