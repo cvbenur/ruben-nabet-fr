@@ -3,7 +3,7 @@
     app
     color="black"
     height="80px"
-    class="px-2"
+    class="px-0"
   >
     <v-row
       justify="space-between"
@@ -152,7 +152,9 @@
               </v-list-item-group>
             </v-list>
 
-            <div class="text-center">
+            <v-divider />
+
+            <div class="text-center py-15">
               <v-btn
                 icon
               >
@@ -191,6 +193,41 @@
                 </v-list>
               </v-menu>
             </div>
+
+            <v-divider />
+
+            <v-row
+              align="center"
+              justify="center"
+              class="pt-15"
+            >
+              <v-col
+                cols="12"
+                class="text-center"
+              >
+                <v-btn
+                  class="text-none text-caption font-weight-light"
+                  text
+                  dark
+                  :href="localePath('/legal-notice')"
+                >
+                  {{ $t('footer.legals') }}
+                </v-btn>
+              </v-col>
+
+              <v-spacer />
+
+              <v-col
+                cols="12"
+                class="text-center"
+              >
+                <p class="my-0 text-caption font-weight-light white--text">
+                  {{ $t('footer.credits.first') }} <v-icon x-small class="px-1" color="accent">
+                    {{ $vuetify.theme.dark ? 'far fa-heart' : 'fas fa-heart' }}
+                  </v-icon> {{ $t('footer.credits.second') }} Ruben <b>NABET_</b>
+                </p>
+              </v-col>
+            </v-row>
           </v-navigation-drawer>
         </div>
       </v-col>
