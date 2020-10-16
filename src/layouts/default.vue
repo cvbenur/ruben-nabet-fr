@@ -3,7 +3,7 @@
     <AppBar />
 
     <v-main>
-      <v-container fluid>
+      <v-container class="fluid fill-height">
         <v-row
           align="center"
           justify="center"
