@@ -218,7 +218,7 @@ export default class AppBar extends Vue {
     },
     {
       title: 'projects',
-      link: '/',
+      link: '/projects',
       active: false
     }
   ];
