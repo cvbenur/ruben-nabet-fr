@@ -1,5 +1,12 @@
 import colors from 'vuetify/es5/util/colors'
 import i18n from './src/config/i18n.config'
+import { projects } from './src/assets/resources/projects.json'
+
+const dynamicRoutes = () => {
+  return new Promise((resolve) => {
+    resolve(projects.map(pj => `projects/${pj.id}`))
+  })
+}
 
 export default {
   target: 'static',
@@ -99,5 +106,9 @@ export default {
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
     extractCSS: true
+  },
+
+  generate: {
+    routes: dynamicRoutes
   }
 }
