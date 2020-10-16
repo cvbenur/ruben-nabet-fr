@@ -1,0 +1,38 @@
+{
+  "projects": [
+    {
+      "title": "Sentin'Ailes",
+      "link": "",
+      "repo": "",
+      "techList": [
+        "VueJS",
+        "NodeJS",
+        "JavaScript",
+        "Firebase"
+      ]
+    },
+    {
+      "title": "DuckyHub",
+      "link": "",
+      "repo": "",
+      "techList": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Firebase"
+      ]
+    },
+    {
+      "title": "Ruben-Nabet.fr - v1.0",
+      "link": "https://ruben-nabet.fr/",
+      "repo": "",
+      "techList": [
+        "VueJS",
+        "NodeJS",
+        "NuxtJS",
+        "TypeScript",
+        "SCSS"
+      ]
+    }
+  ]
+}
