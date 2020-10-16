@@ -65,9 +65,9 @@
         </p>
 
         <p class="text-justify">
-          {{ $t('pages.legals.paragraphs.contact.text') }} : <a href="mailto:rubenabet@gmail.com" class="white--text text-none pl-5">
+          {{ $t('pages.legals.paragraphs.contact.text') }} : <v-btn href="mailto:rubenabet@gmail.com" color="accent" text class="text-none px-2">
             rubenabet@gmail.com
-          </a>.
+          </v-btn>.
         </p>
       </v-col>
     </v-row>
@@ -77,7 +77,13 @@
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
 
-@Component({})
+@Component({
+  head (): object {
+    return {
+      title: this.$i18n.t('pages.legals.heading')
+    }
+  }
+})
 export default class LegalNotice extends Vue {
 
 }
