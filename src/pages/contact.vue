@@ -1,6 +1,6 @@
 <template>
   <v-container class="fluid fill-height">
-    <Title :title="$t('pages.contact.text')" />
+    <Heading :title="$t('pages.contact.text')" />
 
     <v-row align="center" justify="center">
       <v-col cols="12" sm="8">
