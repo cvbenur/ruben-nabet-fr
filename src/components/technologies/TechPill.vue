@@ -1,6 +1,6 @@
 <template>
   <v-chip
-    class="ma-2"
+    class="mr-1 mb-2"
     small
     :color="techno.pillColor"
     pill
