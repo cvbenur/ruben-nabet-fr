@@ -40,7 +40,3 @@ export default class Projects extends Vue {
   }
 }
 </script>
-
-<style>
-
-</style>
