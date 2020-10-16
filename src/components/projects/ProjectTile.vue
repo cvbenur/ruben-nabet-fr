@@ -12,8 +12,8 @@
           rounded
           hover
           color="primary"
-          :href="project.link"
-          target="_blank"
+          nuxt
+          :to="localePath(`/projects/${project.id}`)"
         >
           <v-row
             align="center"
