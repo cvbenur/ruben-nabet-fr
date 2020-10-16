@@ -6,7 +6,7 @@
     >
       <v-col
         cols="12"
-        class="px-0"
+        class="px-0 py-0"
       >
         <v-card
           rounded
