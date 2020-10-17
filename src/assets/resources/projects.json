@@ -3,6 +3,11 @@
     {
       "id": "sentin-ailes",
       "title": "Sentin'Ailes",
+      "description": {
+        "fr": "desc-fr",
+        "en": "desc-en"
+      },
+      "img": "pp_fb.jpg",
       "link": "",
       "repo": "",
       "techList": [

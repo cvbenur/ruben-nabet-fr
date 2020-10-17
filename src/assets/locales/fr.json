@@ -65,7 +65,8 @@
     },
     "projects": {
       "title": "Mes projets",
-      "heading": "Mes projets"
+      "heading": "Mes projets",
+      "items": []
     },
     "legals": {
       "heading": "Mentions légales",

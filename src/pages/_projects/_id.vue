@@ -1,13 +1,13 @@
 <template>
   <v-container class="fluid fill-height">
-    <Heading :title="getPageData().title" />
+    <Heading :title="project.title" />
 
     <v-row
       align="center"
       justify="center"
     >
       <v-col cols="12" class="pt-8">
-        <p>Description sa mère</p>
+        <p>{{ $t(`pages.projects.items[${nbr}].description`) }}</p>
       </v-col>
 
       <v-col
@@ -16,7 +16,7 @@
       >
         <v-img
           class="custom-rounded px-1"
-          :src="require('@/assets/img/pp_fb.jpg')"
+          :src="require(`@/assets/img/${$t(`pages.projects.items[${nbr}].img`)}`)"
           alt="Ruben NABET"
           width="200"
           height="320"
@@ -46,28 +46,44 @@
     </v-row>
 
     <v-row
+      v-show="project.repo !== '' || project.link !== ''"
       align="center"
       justify="start"
     >
       <v-col class="pb-0 pt-5">
         <p class="mb-0">
-          Socials :
+          {{ $t('misc.socials') }} :
         </p>
       </v-col>
     </v-row>
+
     <v-row
       align="center"
       justify="center"
     >
       <v-col
-        v-for="i in 3"
-        :key="i"
+        v-show="project.repo !== ''"
         cols="4"
         sm="1"
         class="text-center"
       >
         <SocialIcon
+          :title="`${$t('misc.see')} ${$t('misc.project')} ${$t('misc.on')} GitHub`"
+          :link="project.repo"
           icon="fab fa-github-alt"
+        />
+      </v-col>
+
+      <v-col
+        v-show="project.link !== ''"
+        cols="4"
+        sm="1"
+        class="text-center"
+      >
+        <SocialIcon
+          :title="`${$t('misc.see')} ${$t('misc.website')}`"
+          :link="project.link"
+          icon="fas fa-globe-africa"
         />
       </v-col>
     </v-row>
@@ -76,37 +92,43 @@
 
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
-import { projects } from '@/assets/resources/projects.json'
 import { Project } from '@/models/project'
 import { Technology, technos } from '@/models/technologies'
+
+const projects = require('@/assets/resources/projects.json').projects
 
 @Component({
   head (): object {
     return {
-      title: (projects.find(pj => pj.id === this.$route.params.id) as unknown as Project).title
+      title: projects.find((pj: any) => pj.id === this.$route.params.id).title
     }
   }
 })
 export default class ProjectPage extends Vue {
   private id: string = this.$route.params.id;
+  private nbr: number = 0;
   private project: Project | null = null;
   private techs: Array<Technology> | null = null;
 
-  private overlay: boolean = false;
-
   getPageData () {
-    return projects.find(pj => pj.id === this.id) as unknown as Project
+    return projects.find((pj: any) => pj.id === this.id)
   }
 
   created () {
     if (!this.project) {
-      this.project = this.getPageData()
+      this.project = this.getPageData() as unknown as Project
+    }
+
+    if (this.nbr === -1) {
+      this.nbr = projects.indexOf(
+        (p: any) => p.id === this.id
+      )
     }
 
     if (!this.techs) {
       this.techs = []
 
-      this.project.techList.forEach(
+      projects[this.nbr].techList.forEach(
         (techTitle: string) => {
           Object.values(technos).forEach(
             (category: Array<Technology>) => {

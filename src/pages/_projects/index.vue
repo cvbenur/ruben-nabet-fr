@@ -7,13 +7,13 @@
       justify="start"
     >
       <v-col
-        v-for="(project, i) in projects"
+        v-for="i in nbrPrj"
         :key="i"
         cols="12"
         sm="6"
         class="pt-0"
       >
-        <ProjectTile :project="project" />
+        <ProjectTile :nbr="i - 1" />
       </v-col>
     </v-row>
   </v-container>
@@ -21,7 +21,7 @@
 
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
-import { Project, projects } from '@/models/project'
+import { nbrs } from '@/config/i18n.config'
 
 @Component({
   head (): object {
@@ -31,11 +31,11 @@ import { Project, projects } from '@/models/project'
   }
 })
 export default class Projects extends Vue {
-  private projects: Array<Project> | null = null;
+  private nbrPrj: number | null = null;
 
   created () {
-    if (!this.projects) {
-      this.projects = projects as Array<Project>
+    if (!this.nbrPrj) {
+      this.nbrPrj = nbrs.projects
     }
   }
 }

@@ -13,7 +13,7 @@
           hover
           color="primary"
           nuxt
-          :to="localePath(`/projects/${project.id}`)"
+          :to="localePath(`/projects/${$t(`pages.projects.items[${nbr}].id`)}`)"
         >
           <v-row
             align="center"
@@ -25,14 +25,14 @@
             >
               <v-img
                 class="rounded-top px-1"
-                :src="require('@/assets/img/pp_fb.jpg')"
+                :src="require(`@/assets/img/${$t(`pages.projects.items[${nbr}].img`)}`)"
                 alt="Ruben NABET"
                 width="800"
                 height="200"
               />
 
               <p class="pt-3 px-2">
-                {{ project.title }}_
+                {{ $t(`pages.projects.items[${nbr}].title`) }}_
               </p>
 
               <v-row
@@ -57,21 +57,20 @@
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator'
-import { Project } from '@/models/project'
 import { Technology, technos } from '@/models/technologies'
 
 @Component({})
 export default class ProjectTile extends Vue {
-  private techs: Array<Technology> | null = null;
-
   @Prop({ required: true })
-  project!: Project;
+  nbr!: number;
+
+  private techs: Array<Technology> | null = null;
 
   created () {
     if (!this.techs) {
       this.techs = []
 
-      this.project.techList.forEach(
+      require('@/assets/resources/projects.json').projects[this.nbr].techList.forEach(
         (techTitle: string) => {
           Object.values(technos).forEach(
             (category: Array<Technology>) => {
