@@ -20,6 +20,11 @@
     {
       "id": "duckyhub",
       "title": "DuckyHub",
+      "description": {
+        "fr": "desc-fr",
+        "en": "desc-en"
+      },
+      "img": "pp_fb.jpg",
       "link": "",
       "repo": "",
       "techList": [
@@ -32,6 +37,11 @@
     {
       "id": "ruben-nabet-fr-v1",
       "title": "Ruben-Nabet.fr - v1.0",
+      "description": {
+        "fr": "desc-fr",
+        "en": "desc-en"
+      },
+      "img": "pp_fb.jpg",
       "link": "https://ruben-nabet.fr/",
       "repo": "",
       "techList": [
