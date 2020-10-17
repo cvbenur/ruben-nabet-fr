@@ -102,5 +102,12 @@
       "first": "Conçu et propulsé avec",
       "second": "par"
     }
+  },
+  "misc": {
+    "see": "Voir",
+    "project": "le projet",
+    "website": "le site",
+    "on": "sur",
+    "socials": "Retrouver le projet"
   }
 }

@@ -102,5 +102,12 @@
       "first": "Designed & powered with",
       "second": "by"
     }
+  },
+  "misc": {
+    "see": "See",
+    "project": "the project",
+    "website": "website",
+    "on": "on",
+    "socials": "Socials"
   }
 }
