@@ -54,7 +54,7 @@
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator'
-import { nbrExps } from '@/config/i18n.config'
+import { nbrs } from '@/config/i18n.config'
 
 @Component({})
 export default class Timeline extends Vue {
@@ -71,8 +71,8 @@ export default class Timeline extends Vue {
   created () {
     if (this.nbrExps === 0) {
       this.nbrExps = (this.category === 'pro'
-        ? nbrExps.pro
-        : nbrExps.edu) - 1
+        ? nbrs.exps.pro
+        : nbrs.exps.edu) - 1
     }
   }
 }

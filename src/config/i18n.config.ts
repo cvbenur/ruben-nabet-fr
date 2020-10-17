@@ -50,7 +50,10 @@ export default {
   }
 }
 
-export const nbrExps = {
-  pro: fr.pages.about.pro.items.length,
-  edu: fr.pages.about.edu.items.length
+export const nbrs = {
+  exps: {
+    pro: fr.pages.about.pro.items.length,
+    edu: fr.pages.about.edu.items.length
+  },
+  projects: projects.length
 }
