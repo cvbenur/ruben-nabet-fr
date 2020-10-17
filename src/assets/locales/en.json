@@ -27,63 +27,11 @@
       },
       "pro": {
         "title": "Professional experience",
-        "items": [
-          {
-            "title": "Freelance Full-Stack Developer",
-            "description": "Web Design & Developement, Server & Database Administration.",
-            "date": "Since Sept. 2020."
-          },
-          {
-            "title": "Full-Stack Developer - SEPEFREI Junior-Entreprise",
-            "description": "Web Design & Developement, Server & Database Administration.",
-            "date": "Since April 2020."
-          },
-          {
-            "title": "Chairman - Human'App - EFREI Paris Student Association",
-            "description": "Project Management, Web Developement, Administrative Tasks. Formerly PR & Community Manager (Feb. 2019 - Feb. 2020).",
-            "date": "Since Feb. 2020."
-          },
-          {
-            "title": "PR & Community Manager - BDE EFREI - EFREI Paris Student Union",
-            "description": "Project & Team Management, Image & Crisis Management, Community Management. BDE Odyssée (April 2019 - April 2020 Term).",
-            "date": "April 2019 - April 2020."
-          },
-          {
-            "title": "Saleperson - Micromania Saint-Antoine (Paris)",
-            "description": "French Gamestop. Sale of games and related services, Storage & Inventory, Delivery Reception, Trainee Oversight.",
-            "date": "April 2018 - Aug. 2018."
-          },
-          {
-            "title": "Saleperson - Micromania Saint-Antoine (Paris)",
-            "description": "French Gamestop. Sale of games and related services, Storage & Inventory, Delivery Reception.",
-            "date": "July 2017 - Aug. 2017."
-          }
-        ]
+        "items": []
       },
       "edu": {
         "title": "Education",
-        "items": [
-          {
-            "title": "Masters Cycle - EFREI Paris - Majoring in Software Engineering",
-            "description": "Master's degree of Engineering. Expected to graduate in 2022.",
-            "date": "Since Sept. 2020."
-          },
-          {
-            "title": "Staffordshire University, UK",
-            "description": "Semester abroad, Computer Science program.",
-            "date": "Sept. 2019 - Dec. 2019."
-          },
-          {
-            "title": "Bachelor Cycle - EFREI Paris - International Section (English)",
-            "description": "School of Computer Engineering and Digital Sciences - Villejuif, Paris area.",
-            "date": "Sept. 2017 - June 2018."
-          },
-          {
-            "title": "Lycée Montaigne, Paris, FR",
-            "description": "Scientific Baccalauréat, Advanced Maths - With honors.",
-            "date": "Sept. 2013 - June 2016."
-          }
-        ]
+        "items": []
       },
       "dl": {
         "text": "Download my resume",

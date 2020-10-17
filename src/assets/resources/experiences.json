@@ -1,56 +1,126 @@
 {
-  "professionalExperiences": [
+  "pro": [
     {
-      "title": "Développeur Full-Stack en Freelance",
-      "description": "Design & Développement Web, Administration Serveur et Base de Données.",
-      "date": "Depuis Septembre 2020."
+      "en": {
+        "title": "Freelance Full-Stack Developer",
+        "description": "Web Design & Developement, Server & Database Administration.",
+        "date": "Since Sept. 2020."
+      },
+      "fr": {
+        "title": "Développeur Full-Stack en Freelance",
+        "description": "Design & Développement Web, Administration Serveur et Base de Données.",
+        "date": "Depuis Septembre 2020."
+      }
     },
     {
-      "title": "Développeur Full-Stack - SEPEFREI Junior-Entreprise",
-      "description": "Design & Développement Web, Administration Serveur et Base de Données.",
-      "date": "Depuis Avril 2020."
+      "en": {
+        "title": "Full-Stack Developer - SEPEFREI Junior-Entreprise",
+        "description": "Web Design & Developement, Server & Database Administration.",
+        "date": "Since April 2020."
+      },
+      "fr": {
+        "title": "Développeur Full-Stack - SEPEFREI Junior-Entreprise",
+        "description": "Design & Développement Web, Administration Serveur et Base de Données.",
+        "date": "Depuis Avril 2020."
+      }
     },
     {
-      "title": "Président - Human'App - Association Etudiante Efrei Paris",
-      "description": "Gestion de Projet, Développement Web, Tâches Administratives. Anciennement Responsable Communications (Février 2019 - Février 2020).",
-      "date": "Depuis Février 2020."
+      "en": {
+        "title": "Chairman - Human'App - EFREI Paris Student Association",
+        "description": "Project Management, Web Developement, Administrative Tasks. Formerly PR & Community Manager (Feb. 2019 - Feb. 2020).",
+        "date": "Since Feb. 2020."
+      },
+      "fr": {
+        "title": "Président - Human'App - Association Etudiante Efrei Paris",
+        "description": "Gestion de Projet, Développement Web, Tâches Administratives. Anciennement Responsable Communications (Février 2019 - Février 2020).",
+        "date": "Depuis Février 2020."
+      }
     },
     {
-      "title": "Responsable Communications - BDE Efrei - Bureau des Etudiants Efrei Paris",
-      "description": "Gestion de Projet, Gestion d'équipes, Gestion d'image et de crises, Community Management. BDE Odyssée (Mandat Avril 2019 - Avril 2020).",
-      "date": "Avril 2019 - Avril 2020."
+      "en": {
+        "title": "PR & Community Manager - BDE EFREI - EFREI Paris Student Union",
+        "description": "Project & Team Management, Image & Crisis Management, Community Management. BDE Odyssée (April 2019 - April 2020 Term).",
+        "date": "April 2019 - April 2020."
+      },
+      "fr": {
+        "title": "Responsable Communications - BDE Efrei - Bureau des Etudiants Efrei Paris",
+        "description": "Gestion de Projet, Gestion d'équipes, Gestion d'image et de crises, Community Management. BDE Odyssée (Mandat Avril 2019 - Avril 2020).",
+        "date": "Avril 2019 - Avril 2020."
+      }
     },
     {
-      "title": "Vendeur-Préparateur Junior - Micromania Saint-Antoine (Paris)",
-      "description": "Vente de jeux et services associés, Réassort, Livraisons, Supervision de recrues.",
-      "date": "Avril 2018 - Août 2018."
+      "en": {
+        "title": "Saleperson - Micromania Saint-Antoine (Paris)",
+        "description": "French Gamestop. Sale of games and related services, Storage & Inventory, Delivery Reception, Trainee Oversight.",
+        "date": "April 2018 - Aug. 2018."
+      },
+      "fr": {
+        "title": "Vendeur-Préparateur Junior - Micromania Saint-Antoine (Paris)",
+        "description": "Vente de jeux et services associés, Réassort, Livraisons, Supervision de recrues.",
+        "date": "Avril 2018 - Août 2018."
+      }
     },
     {
-      "title": "Vendeur-Préparateur Junior - Micromania Saint-Antoine (Paris)",
-      "description": "Vente de jeux et services associés, Réassort, Livraisons, Supervision de recrues.",
-      "date": "Juillet 2017 - Août 2017."
+      "en": {
+        "title": "Saleperson - Micromania Saint-Antoine (Paris)",
+        "description": "French Gamestop. Sale of games and related services, Storage & Inventory, Delivery Reception.",
+        "date": "July 2017 - Aug. 2017."
+      },
+      "fr": {
+        "title": "Vendeur-Préparateur Junior - Micromania Saint-Antoine (Paris)",
+        "description": "Vente de jeux et services associés, Réassort, Livraisons, Supervision de recrues.",
+        "date": "Juillet 2017 - Août 2017."
+      }
     }
   ],
-  "education" : [
+  "edu" : [
     {
-      "title": "Cycle Ingénieur - Efrei Paris - M1 Software Engineering",
-      "description": "Master Ingénierie Informatique et Sciences du Numérique. Diplômé en 2022.",
-      "date": "Depuis Septembre 2020."
+      "en": {
+        "title": "Masters Cycle - EFREI Paris - Majoring in Software Engineering",
+        "description": "Master's degree of Engineering. Expected to graduate in 2022.",
+        "date": "Since Sept. 2020."
+      },
+      "fr": {
+        "title": "Cycle Ingénieur - Efrei Paris - M1 Software Engineering",
+        "description": "Master Ingénierie Informatique et Sciences du Numérique. Diplômé en 2022.",
+        "date": "Depuis Septembre 2020."
+      }
     },
     {
-      "title": "Staffordshire University, Royaume-Uni",
-      "description": "Semestre d’études à l’étranger, Programme Sciences de l’Informatique.",
-      "date": "Septembre 2019 - Décembre 2019."
+      "en": {
+        "title": "Staffordshire University, UK",
+        "description": "Semester abroad, Computer Science program.",
+        "date": "Sept. 2019 - Dec. 2019."
+      },
+      "fr": {
+        "title": "Staffordshire University, Royaume-Uni",
+        "description": "Semestre d’études à l’étranger, Programme Sciences de l’Informatique.",
+        "date": "Septembre 2019 - Décembre 2019."
+      }
     },
     {
-      "title": "Cycle Préparatoire - Efrei Paris - Section Internationale (Anglais)",
-      "description": "École d’Ingénierie Informatique et Sciences du Numérique, Villejuif.",
-      "date": "Septembre 2017 - Juin 2018."
+      "en": {
+        "title": "Bachelor Cycle - EFREI Paris - International Section (English)",
+        "description": "School of Computer Engineering and Digital Sciences - Villejuif, Paris area.",
+        "date": "Sept. 2017 - June 2018."
+      },
+      "fr": {
+        "title": "Cycle Préparatoire - Efrei Paris - Section Internationale (Anglais)",
+        "description": "École d’Ingénierie Informatique et Sciences du Numérique, Villejuif.",
+        "date": "Septembre 2017 - Juin 2018."
+      }
     },
     {
-      "title": "Lycée Montaigne, Paris",
-      "description": "Baccalauréat S, SVT - Spécialité Maths - Mention AB.",
-      "date": "Septembre 2013 - Juin 2016."
+      "en": {
+        "title": "Lycée Montaigne, Paris, FR",
+        "description": "Scientific Baccalauréat, Advanced Maths - With honors.",
+        "date": "Sept. 2013 - June 2016."
+      },
+      "fr": {
+        "title": "Lycée Montaigne, Paris",
+        "description": "Baccalauréat S, SVT - Spécialité Maths - Mention AB.",
+        "date": "Septembre 2013 - Juin 2016."
+      }
     }
   ]
 }

@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid>
+  <v-container class="fluid fill-height">
     <v-row
       align="center"
       justify="center"
@@ -16,7 +16,7 @@
           class="py-0"
         >
           <v-lazy
-            v-for="(exp, i) in exps"
+            v-for="i in nbrExps"
             :key="i"
             v-model="isActive"
             :options="{
@@ -54,13 +54,10 @@
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator'
-import { Experience } from '@/models/experience'
+import { nbrExps } from '@/config/i18n.config'
 
 @Component({})
 export default class Timeline extends Vue {
-  @Prop({ required: true })
-  exps!: Array<Experience>;
-
   @Prop({ required: true })
   category!: string;
 
@@ -68,5 +65,15 @@ export default class Timeline extends Vue {
   right!: boolean;
 
   private isActive: boolean = false;
+
+  private nbrExps: number = 0;
+
+  created () {
+    if (this.nbrExps === 0) {
+      this.nbrExps = (this.category === 'pro'
+        ? nbrExps.pro
+        : nbrExps.edu) - 1
+    }
+  }
 }
 </script>

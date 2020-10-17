@@ -50,7 +50,6 @@
         class="mt-5"
       >
         <Timeline
-          :exps="exps.pro"
           category="pro"
           right
         />
@@ -67,7 +66,6 @@
         class="mt-5"
       >
         <Timeline
-          :exps="exps.edu"
           category="edu"
         />
       </v-row>
@@ -139,7 +137,6 @@
 
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
-import { Experience, exps } from '@/models/experience'
 import { Social, socials } from '@/models/socials'
 
 @Component({
@@ -152,19 +149,7 @@ import { Social, socials } from '@/models/socials'
 export default class About extends Vue {
   private socials: Array<Social> | null = null;
 
-  private exps: {
-  pro: Array<Experience>,
-  edu: Array<Experience>
-  } | null = null;
-
   created () {
-    if (!this.exps) {
-      this.exps = {
-        pro: exps.pro,
-        edu: exps.edu
-      }
-    }
-
     if (!this.socials) {
       this.socials = socials
     }
