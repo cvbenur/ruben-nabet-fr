@@ -6,7 +6,7 @@
       <v-row
         align="center"
         justify="center"
-        class="mt-sm-15 mt-10 d-flex"
+        class="mt-sm-15 mt-10 d-flex mb-10"
       >
         <v-col
           cols="6"
@@ -16,7 +16,7 @@
           class="d-flex flex-row-reverse"
         >
           <v-img
-            class="custom-rounded shifted-bottom-left"
+            class="custom-rounded shifted-bottom-left mb-10 mb-md-0"
             :src="require('@/assets/img/pp_fb.jpg')"
             alt="Ruben NABET"
             width="250"
@@ -103,7 +103,7 @@
     >
       <v-col
         cols="12"
-        sm="4"
+        sm="5"
       >
         <v-btn
           color="secondary"

@@ -13,7 +13,8 @@
         v-for="(tech, i) in technos"
         :key="i"
         cols="6"
-        sm="3"
+        sm="6"
+        md="3"
       >
         <TechTile
           :techno="tech"

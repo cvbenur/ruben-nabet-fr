@@ -5,15 +5,17 @@
     <v-row
       align="center"
       justify="start"
+      class="mt-10"
     >
       <v-col
         v-for="i in nbrPrj"
         :key="i"
         cols="12"
-        sm="6"
+        sm="12"
+        md="6"
         class="pt-0"
       >
-        <ProjectTile :nbr="i - 1" />
+        <ProjectTile :nbr="i-1" />
       </v-col>
     </v-row>
   </v-container>

@@ -7,7 +7,7 @@
       <v-col
         cols="12"
         sm="12"
-        xl="8"
+        xl="9"
         class="py-0"
       >
         <v-timeline
@@ -31,17 +31,16 @@
               <v-card
                 :color="$vuetify.theme.dark ? 'black' : 'primary'"
                 elevation="1"
+                class="py-3 px-5"
               >
-                <v-card-title
-                  class="headline text-h5 font-weight-bold"
-                >
-                  {{ $t(`pages.about.${category}.items[${i}].title`) }}_
-                </v-card-title>
-                <v-card-text class="pt-4">
-                  {{ $t(`pages.about.${category}.items[${i}].date`) }}
+                <p class="headline text-h5 font-weight-bold">
+                  {{ $t(`pages.about.${category}.items[${i-1}].title`) }}_
+                </p>
+                <v-card-text class="pa-0 mb-4">
+                  {{ $t(`pages.about.${category}.items[${i-1}].date`) }}
                 </v-card-text>
-                <v-card-text>
-                  {{ $t(`pages.about.${category}.items[${i}].description`) }}
+                <v-card-text class="pa-0 white--text">
+                  {{ $t(`pages.about.${category}.items[${i-1}].description`) }}
                 </v-card-text>
               </v-card>
             </v-timeline-item>
@@ -72,7 +71,7 @@ export default class Timeline extends Vue {
     if (this.nbrExps === 0) {
       this.nbrExps = (this.category === 'pro'
         ? nbrs.exps.pro
-        : nbrs.exps.edu) - 1
+        : nbrs.exps.edu)
     }
   }
 }
