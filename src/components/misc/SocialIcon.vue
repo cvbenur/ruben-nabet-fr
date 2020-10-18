@@ -17,7 +17,7 @@
         </v-icon>
       </v-btn>
     </template>
-    <span>{{ title }}</span>
+    <span>{{ tooltip }}</span>
   </v-tooltip>
 </template>
 
@@ -32,7 +32,22 @@ export default class SocialIcon extends Vue {
   @Prop({ required: true })
   title!: string;
 
+  @Prop({ required: false, default: '' })
+  handle!: string;
+
   @Prop({ required: true })
   icon!: string;
+
+  private tooltip: string | null = null;
+
+  created () {
+    if (!this.tooltip) {
+      this.tooltip = this.title
+
+      if (this.handle !== '') {
+        this.tooltip += ` (${this.handle})`
+      }
+    }
+  }
 }
 </script>

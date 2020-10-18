@@ -128,6 +128,7 @@
         <SocialIcon
           :icon="social.icon"
           :title="social.title"
+          :handle="social.handle"
           :link="social.link"
         />
       </v-col>
