@@ -1,6 +1,6 @@
 {   
   "navlinks": {
-    "about": "À propos",
+    "resume": "CV",
     "technologies": "Technologies",
     "projects": "Mes projets"
   },
@@ -17,14 +17,18 @@
       "mainTitle": {
         "first": "Développeur",
         "second": "Full-Stack"
+      },
+      "about": {
+        "title": "A propos de moi",
+        "paragraphs": {
+          "first": "Nam a ultricies mauris, sit amet euismod enim. Integer pulvinar, justo quis mollis rutrum, lacus quam ultrices turpis, ut iaculis sem leo sed neque. Aenean eget commodo lectus. Nam ut diam libero. Nam aliquam metus mauris, id rhoncus arcu blandit id. Nulla sagittis eleifend tortor, vulputate placerat ante auctor sit amet. Aenean fringilla, lacus nec lobortis consectetur, justo massa molestie nisi, id pretium mauris magna a ligula. Aenean nisl sapien, dictum ut dignissim consequat, rhoncus vel ipsum. Fusce convallis dolor id consectetur volutpat."
+        }
       }
     },
-    "about": {
-      "title": "À propos",
-      "heading": "À propos de moi",
-      "paragraphs": {
-        "first": "Nam a ultricies mauris, sit amet euismod enim. Integer pulvinar, justo quis mollis rutrum, lacus quam ultrices turpis, ut iaculis sem leo sed neque. Aenean eget commodo lectus. Nam ut diam libero. Nam aliquam metus mauris, id rhoncus arcu blandit id. Nulla sagittis eleifend tortor, vulputate placerat ante auctor sit amet. Aenean fringilla, lacus nec lobortis consectetur, justo massa molestie nisi, id pretium mauris magna a ligula. Aenean nisl sapien, dictum ut dignissim consequat, rhoncus vel ipsum. Fusce convallis dolor id consectetur volutpat."
-      },
+    "resume": {
+      "title": "CV",
+      "heading": "Mon CV",
+      "see": "Voir mon CV",
       "pro": {
         "title": "Expérience professionnelle",
         "items": []
@@ -66,6 +70,8 @@
     "projects": {
       "title": "Mes projets",
       "heading": "Mes projets",
+      "featured": "Projets mis en avant",
+      "other": "autre projets",
       "items": []
     },
     "legals": {
@@ -99,7 +105,7 @@
   "footer": {
     "legals": "Mentions légales",
     "credits": {
-      "first": "Conçu et propulsé avec",
+      "first": "Conçu & propulsé avec",
       "second": "par"
     }
   },

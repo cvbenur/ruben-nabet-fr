@@ -58,31 +58,37 @@
           class="text-right"
         >
           <div class="hidden-sm-and-down">
-            <v-btn
-              icon
-            >
-              <v-icon
-                color="white"
-                @click="setTheme()"
+            <v-hover v-slot:default="{ hover }">
+              <v-btn
+                icon
+                :elevation="hover ? 12 : 0"
               >
-                {{ $vuetify.theme.dark ? 'far fa-moon' : 'fas fa-sun' }}
-              </v-icon>
-            </v-btn>
+                <v-icon
+                  color="white"
+                  @click="setTheme()"
+                >
+                  {{ $vuetify.theme.dark ? 'far fa-moon' : 'fas fa-sun' }}
+                </v-icon>
+              </v-btn>
+            </v-hover>
 
             <v-menu
               offset-y
               transition="slide-y-transition"
             >
               <template v-slot:activator="{ on, attrs }">
-                <v-btn
-                  icon
-                  v-bind="attrs"
-                  v-on="on"
-                >
-                  <v-icon color="white">
-                    fas fa-globe
-                  </v-icon>
-                </v-btn>
+                <v-hover v-slot:default="{ hover }">
+                  <v-btn
+                    :elevation="hover ? 12 : 0"
+                    icon
+                    v-bind="attrs"
+                    v-on="on"
+                  >
+                    <v-icon color="white">
+                      fas fa-globe
+                    </v-icon>
+                  </v-btn>
+                </v-hover>
               </template>
 
               <v-list>
@@ -247,8 +253,8 @@ export default class AppBar extends Vue {
 
   private items = [
     {
-      title: 'about',
-      link: '/about-me',
+      title: 'resume',
+      link: '/resume',
       active: false
     },
     {
@@ -286,7 +292,7 @@ export default class AppBar extends Vue {
   created () {
     this.items.forEach(
       (item) => {
-        if (item.link === this.$route.path.split('/en')[1]) {
+        if (this.$route.path.endsWith(item.link)) {
           item.active = true
         }
       }

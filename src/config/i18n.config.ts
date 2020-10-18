@@ -6,15 +6,15 @@ import fr from '../assets/locales/fr.json'
 
 pro.forEach(
   (item) => {
-    en.pages.about.pro.items.push(item.en as never)
-    fr.pages.about.pro.items.push(item.fr as never)
+    en.pages.resume.pro.items.push(item.en as never)
+    fr.pages.resume.pro.items.push(item.fr as never)
   }
 )
 
 edu.forEach(
   (item) => {
-    en.pages.about.edu.items.push(item.en as never)
-    fr.pages.about.edu.items.push(item.fr as never)
+    en.pages.resume.edu.items.push(item.en as never)
+    fr.pages.resume.edu.items.push(item.fr as never)
   }
 )
 
@@ -52,8 +52,8 @@ export default {
 
 export const nbrs = {
   exps: {
-    pro: fr.pages.about.pro.items.length,
-    edu: fr.pages.about.edu.items.length
+    pro: fr.pages.resume.pro.items.length,
+    edu: fr.pages.resume.edu.items.length
   },
   projects: projects.length
 }
