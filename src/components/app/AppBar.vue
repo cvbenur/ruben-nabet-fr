@@ -247,8 +247,8 @@ export default class AppBar extends Vue {
 
   private items = [
     {
-      title: 'about',
-      link: '/about-me',
+      title: 'resume',
+      link: '/resume',
       active: false
     },
     {
@@ -286,7 +286,7 @@ export default class AppBar extends Vue {
   created () {
     this.items.forEach(
       (item) => {
-        if (item.link === this.$route.path.split('/en')[1]) {
+        if (this.$route.path.endsWith(item.link)) {
           item.active = true
         }
       }

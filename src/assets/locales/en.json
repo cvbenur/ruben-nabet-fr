@@ -1,6 +1,6 @@
 {   
   "navlinks": {
-    "about": "About me",
+    "resume": "Resume",
     "technologies": "Technologies",
     "projects": "My projects"
   },
@@ -17,14 +17,18 @@
       "mainTitle": {
         "first": "Full-Stack",
         "second": "Developer"
+      },
+      "about": {
+        "title": "About me",
+        "paragraphs": {
+          "first": "Nam a ultricies mauris, sit amet euismod enim. Integer pulvinar, justo quis mollis rutrum, lacus quam ultrices turpis, ut iaculis sem leo sed neque. Aenean eget commodo lectus. Nam ut diam libero. Nam aliquam metus mauris, id rhoncus arcu blandit id. Nulla sagittis eleifend tortor, vulputate placerat ante auctor sit amet. Aenean fringilla, lacus nec lobortis consectetur, justo massa molestie nisi, id pretium mauris magna a ligula. Aenean nisl sapien, dictum ut dignissim consequat, rhoncus vel ipsum. Fusce convallis dolor id consectetur volutpat."
+        }
       }
     },
-    "about": {
-      "title": "About me",
-      "heading": "About me",
-      "paragraphs": {
-        "first": "Nam a ultricies mauris, sit amet euismod enim. Integer pulvinar, justo quis mollis rutrum, lacus quam ultrices turpis, ut iaculis sem leo sed neque. Aenean eget commodo lectus. Nam ut diam libero. Nam aliquam metus mauris, id rhoncus arcu blandit id. Nulla sagittis eleifend tortor, vulputate placerat ante auctor sit amet. Aenean fringilla, lacus nec lobortis consectetur, justo massa molestie nisi, id pretium mauris magna a ligula. Aenean nisl sapien, dictum ut dignissim consequat, rhoncus vel ipsum. Fusce convallis dolor id consectetur volutpat."
-      },
+    "resume": {
+      "title": "Resume",
+      "heading": "My resume",
+      "see": "Check out my resume",
       "pro": {
         "title": "Professional experience",
         "items": []

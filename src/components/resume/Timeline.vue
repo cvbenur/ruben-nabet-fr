@@ -13,7 +13,7 @@
         <v-timeline
           dense
           :reverse="right"
-          class="py-0"
+          class="py-0 mt-5"
           align-top
         >
           <v-lazy
@@ -36,16 +36,16 @@
                 class="py-3 px-5"
               >
                 <p :class="`headline text-h5 mb-0 font-weight-bold ${$vuetify.theme.dark ? 'white' : 'black'}--text`">
-                  {{ $t(`pages.about.${category}.items[${i-1}].title`) }}_
+                  {{ $t(`pages.resume.${category}.items[${i-1}].title`) }}_
                 </p>
 
                 <hr class="my-3 secondary">
 
                 <v-card-text :class="`pa-0 mb-4 ${$vuetify.theme.dark ? 'grey' : 'black'}--text`">
-                  {{ $t(`pages.about.${category}.items[${i-1}].date`) }}
+                  {{ $t(`pages.resume.${category}.items[${i-1}].date`) }}
                 </v-card-text>
                 <v-card-text :class="`pa-0 text-justify ${$vuetify.theme.dark ? 'white' : 'black'}--text`">
-                  {{ $t(`pages.about.${category}.items[${i-1}].description`) }}
+                  {{ $t(`pages.resume.${category}.items[${i-1}].description`) }}
                 </v-card-text>
               </v-card>
             </v-timeline-item>
