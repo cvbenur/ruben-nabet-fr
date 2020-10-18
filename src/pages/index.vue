@@ -41,11 +41,112 @@
         </v-row>
       </v-col>
     </v-row>
+
+    <section class="mt-md-15 mt-10 mb-5">
+      <Title :title="$t('pages.index.about.title')" />
+
+      <v-row
+        align="center"
+        justify="center"
+        class="mt-8"
+      >
+        <v-col cols="12">
+          <p class="ma-0 text-justify">
+            {{ $t('pages.index.about.paragraphs.first') }}
+          </p>
+        </v-col>
+      </v-row>
+
+      <v-row align="center" justify="center" class="mt-5">
+        <v-col cols="12" sm="4">
+          <v-hover v-slot:default="{ hover }">
+            <v-btn
+              :elevation="hover ? 12 : 0"
+              color="secondary"
+              class="text-none font-weight-bold"
+              block
+              ripple
+              large
+              nuxt
+              :to="localePath('/resume')"
+            >
+              {{ $t('pages.resume.see') }}_
+            </v-btn>
+          </v-hover>
+        </v-col>
+      </v-row>
+    </section>
+
+    <Title
+      :title="$t('pages.projects.featured')"
+      alignment="right"
+      class="mt-10 mt-md-15"
+    />
+
+    <v-row align="start" justify="center" class="mt-4">
+      <v-col
+        v-for="i in featured"
+        :key="i"
+        cols="12"
+        sm="6"
+      >
+        <ProjectTile :nbr="i-1" />
+      </v-col>
+    </v-row>
+
+    <v-row align="center" justify="center" class="mb-5">
+      <v-col cols="12" sm="4">
+        <v-hover v-slot:default="{ hover }">
+          <v-btn
+            :elevation="hover ? 12 : 0"
+            color="secondary"
+            class="text-none font-weight-bold"
+            block
+            outlined
+            ripple
+            large
+            nuxt
+            :to="localePath('/projects')"
+          >
+            {{ `${$t('misc.see')} ${nbrPj} ${$t('pages.projects.other')}${nbrPj > 1 ? 's' : ''}` }}_
+          </v-btn>
+        </v-hover>
+      </v-col>
+    </v-row>
+
+    <Title
+      :title="$t('pages.contact.text')"
+      class="mt-10 mt-md-15"
+    />
+
+    <v-row align="center" justify="center" class="mt-4">
+      <v-col cols="12">
+        <ContactForm />
+      </v-col>
+    </v-row>
+
+    <v-row align="center" justify="center">
+      <v-col
+        v-for="(social, i) in socials"
+        :key="i"
+        cols="4"
+        sm="1"
+      >
+        <SocialIcon
+          :icon="social.icon"
+          :title="social.title"
+          :handle="social.handle"
+          :link="social.link"
+        />
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
+import { Social, socials } from '@/models/socials'
+import { nbrs } from '@/config/i18n.config'
 
 @Component({
   head (): object {
@@ -54,7 +155,19 @@ import { Vue, Component } from 'vue-property-decorator'
     }
   }
 })
-export default class Index extends Vue {
+export default class Resume extends Vue {
+  private socials: Array<Social> | null = null;
+  private featured: number = 2;
+  private nbrPj: number | null = null;
 
+  created () {
+    if (!this.socials) {
+      this.socials = socials
+    }
+
+    if (!this.nbrPj) {
+      this.nbrPj = nbrs.projects - this.featured
+    }
+  }
 }
 </script>

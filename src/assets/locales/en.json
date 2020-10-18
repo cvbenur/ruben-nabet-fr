@@ -70,6 +70,8 @@
     "projects": {
       "title": "My projects",
       "heading": "My projects",
+      "featured": "Featured projects",
+      "other": "other project",
       "items": []
     },
     "legals": {

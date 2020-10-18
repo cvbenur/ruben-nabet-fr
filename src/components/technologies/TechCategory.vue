@@ -19,6 +19,7 @@
         <TechTile
           :techno="tech"
           :size="90"
+          :shift="alignment"
         />
       </v-col>
     </v-row>

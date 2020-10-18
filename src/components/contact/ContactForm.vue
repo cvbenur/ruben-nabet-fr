@@ -11,7 +11,7 @@
         outlined
         flat
         color="secondary"
-        :label="`${$t('pages.contact.fields.name')}`"
+        :label="`${$t('pages.contact.fields.name')}_`"
         :rules="rules.reqTxt"
       />
 
@@ -20,7 +20,7 @@
         outlined
         flat
         color="secondary"
-        :label="`${$t('pages.contact.fields.email')}`"
+        :label="`${$t('pages.contact.fields.email')}_`"
         :rules="rules.reqEmail"
       />
 
@@ -29,22 +29,24 @@
         outlined
         flat
         color="secondary"
-        :label="`${$t('pages.contact.fields.message')}`"
+        :label="`${$t('pages.contact.fields.message')}_`"
         :rules="rules.reqTxt"
       />
 
       <v-row align="center" justify="center">
         <v-col cols="12" sm="4">
-          <v-btn
-            color="secondary"
-            class="text-none mt-5"
-            elevation="0"
-            large
-            type="submit"
-            block
-          >
-            {{ $t('pages.contact.send') }}_
-          </v-btn>
+          <v-hover v-slot:default="{ hover }">
+            <v-btn
+              :elevation="hover ? 12 : 0"
+              color="secondary"
+              class="text-none mt-5"
+              large
+              type="submit"
+              block
+            >
+              {{ $t('pages.contact.send') }}_
+            </v-btn>
+          </v-hover>
         </v-col>
       </v-row>
     </v-form>

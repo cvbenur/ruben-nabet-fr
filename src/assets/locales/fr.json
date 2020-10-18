@@ -70,6 +70,8 @@
     "projects": {
       "title": "Mes projets",
       "heading": "Mes projets",
+      "featured": "Projets mis en avant",
+      "other": "autre projets",
       "items": []
     },
     "legals": {
@@ -103,7 +105,7 @@
   "footer": {
     "legals": "Mentions légales",
     "credits": {
-      "first": "Conçu et propulsé avec",
+      "first": "Conçu & propulsé avec",
       "second": "par"
     }
   },
