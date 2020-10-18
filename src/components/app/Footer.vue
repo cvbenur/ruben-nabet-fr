@@ -32,7 +32,7 @@
           class="px-0"
         >
           <p class="my-0 text-caption font-weight-light text-center white--text">
-            {{ $t('footer.credits.first') }} <v-icon x-small class="px-1" color="accent">
+            {{ $t('footer.credits.first') }} <v-icon x-small class="px-1" color="secondary">
               {{ $vuetify.theme.dark ? 'far fa-heart' : 'fas fa-heart' }}
             </v-icon> {{ $t('footer.credits.second') }} Ruben <b>NABET_</b>
           </p>

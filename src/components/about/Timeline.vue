@@ -14,6 +14,7 @@
           dense
           :reverse="right"
           class="py-0"
+          align-top
         >
           <v-lazy
             v-for="i in nbrExps"
@@ -27,19 +28,23 @@
             <v-timeline-item
               color="secondary"
               fill-dot
+              :class="i === nbrExps ? 'pb-0' : ''"
             >
               <v-card
-                :color="$vuetify.theme.dark ? 'black' : 'primary'"
+                :color="$vuetify.theme.dark ? 'black' : 'white'"
                 elevation="1"
                 class="py-3 px-5"
               >
-                <p class="headline text-h5 font-weight-bold">
+                <p :class="`headline text-h5 mb-0 font-weight-bold ${$vuetify.theme.dark ? 'white' : 'black'}--text`">
                   {{ $t(`pages.about.${category}.items[${i-1}].title`) }}_
                 </p>
-                <v-card-text class="pa-0 mb-4">
+
+                <hr class="my-3 secondary">
+
+                <v-card-text :class="`pa-0 mb-4 ${$vuetify.theme.dark ? 'grey' : 'black'}--text`">
                   {{ $t(`pages.about.${category}.items[${i-1}].date`) }}
                 </v-card-text>
-                <v-card-text class="pa-0 white--text">
+                <v-card-text :class="`pa-0 text-justify ${$vuetify.theme.dark ? 'white' : 'black'}--text`">
                   {{ $t(`pages.about.${category}.items[${i-1}].description`) }}
                 </v-card-text>
               </v-card>

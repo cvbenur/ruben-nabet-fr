@@ -10,7 +10,8 @@
         >
           <v-col
             cols="12"
-            sm="8"
+            sm="10"
+            md="8"
           >
             <v-card
               class="px-md-5 mb-10 mb-md-0"

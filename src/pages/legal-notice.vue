@@ -65,7 +65,7 @@
         </p>
 
         <p class="text-justify">
-          {{ $t('pages.legals.paragraphs.contact.text') }} : <v-btn href="mailto:rubenabet@gmail.com" color="accent" text class="text-none px-2">
+          {{ $t('pages.legals.paragraphs.contact.text') }} : <v-btn href="mailto:rubenabet@gmail.com" color="secondary" text class="text-none px-2">
             rubenabet@gmail.com
           </v-btn>.
         </p>

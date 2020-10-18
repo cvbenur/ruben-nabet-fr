@@ -10,7 +10,7 @@
         lg="5"
         class="d-inline-flex justify-center justify-sm-end text-center"
       >
-        <div class="pa-1 accent rounded-circle d-inline-block">
+        <div class="pa-1 secondary rounded-circle d-inline-block">
           <v-avatar
             size="102"
           >

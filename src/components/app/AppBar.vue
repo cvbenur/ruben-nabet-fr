@@ -14,8 +14,11 @@
           cols="10"
           md="3"
         >
-          <nuxt-link
-            :to="localePath('/')"
+          <v-btn
+            dark
+            text
+            :href="localePath('/')"
+            class="text-none py-8"
             @click.native="setActive(-1)"
           >
             <v-avatar>
@@ -25,7 +28,7 @@
               >
             </v-avatar>
             <span class="ml-4 white--text">Ruben <b>NABET_</b></span>
-          </nuxt-link>
+          </v-btn>
         </v-col>
 
         <v-col
@@ -33,21 +36,19 @@
           class="hidden-sm-and-down"
         >
           <v-row justify="space-between">
-            <nuxt-link
+            <v-btn
               v-for="(item, i) in items"
               :key="i"
               :to="localePath(`${item.link}`)"
+              nuxt
+              class="text-none"
+              text
+              ripple
+              :color="item.active ? 'secondary' : 'white'"
+              @click="setActive(i)"
             >
-              <v-btn
-                class="text-none"
-                text
-                ripple
-                :color="item.active ? 'accent' : 'white'"
-                @click="setActive(i)"
-              >
-                {{ $t(`navlinks.${item.title}`) }}_
-              </v-btn>
-            </nuxt-link>
+              {{ $t(`navlinks.${item.title}`) }}_
+            </v-btn>
           </v-row>
         </v-col>
 
@@ -89,6 +90,7 @@
                   v-for="(lang, i) in $i18n.locales"
                   :key="i"
                   :to="switchLocalePath(lang.code)"
+                  nuxt
                 >
                   <v-list-item-title>{{ lang.name }}</v-list-item-title>
                 </v-list-item>
@@ -137,19 +139,17 @@
                 dark
               >
                 <v-list-item-group mandatory>
-                  <nuxt-link
+                  <v-list-item
                     v-for="(item, i) in items"
                     :key="i"
+                    text
+                    :color="item.active ? 'secondary' : 'white'"
+                    nuxt
                     :to="localePath(`${item.link}`)"
+                    @click="setActive(i)"
                   >
-                    <v-list-item
-                      text
-                      :color="item.active ? 'accent' : 'white'"
-                      @click="setActive(i)"
-                    >
-                      {{ $t(`navlinks.${item.title}`) }}_
-                    </v-list-item>
-                  </nuxt-link>
+                    {{ $t(`navlinks.${item.title}`) }}_
+                  </v-list-item>
                 </v-list-item-group>
               </v-list>
 
@@ -183,11 +183,12 @@
                     </v-btn>
                   </template>
 
-                  <v-list>
+                  <v-list dark>
                     <v-list-item
                       v-for="(lang, i) in $i18n.locales"
                       :key="i"
                       :to="switchLocalePath(lang.code)"
+                      nuxt
                     >
                       <v-list-item-title>{{ lang.name }}</v-list-item-title>
                     </v-list-item>
@@ -280,6 +281,16 @@ export default class AppBar extends Vue {
   setTheme () {
     this.$vuetify.theme.dark = !this.$vuetify.theme.dark
     this.toggleDrawer()
+  }
+
+  created () {
+    this.items.forEach(
+      (item) => {
+        if (item.link === this.$route.path.split('/en')[1]) {
+          item.active = true
+        }
+      }
+    )
   }
 }
 </script>
