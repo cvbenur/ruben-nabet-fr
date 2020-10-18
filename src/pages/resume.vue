@@ -71,7 +71,7 @@
     >
       <v-col
         cols="12"
-        sm="5"
+        sm="4"
       >
         <v-hover v-slot:default="{ hover }">
           <v-btn
