@@ -51,8 +51,18 @@
         class="mt-8"
       >
         <v-col cols="12">
-          <p class="ma-0 text-justify">
+          <p class="ma-0 text-h5 text-justify">
+            Bonjour !
+          </p>
+
+          <p class="ma-0 text-h6 text-justify">
             {{ $t('pages.index.about.paragraphs.first') }}
+          </p>
+          <p class="ma-0 text-h6 text-justify">
+            {{ $t('pages.index.about.paragraphs.second') }}
+          </p>
+          <p class="ma-0 text-h6 text-justify">
+            {{ $t('pages.index.about.paragraphs.third') }}
           </p>
         </v-col>
       </v-row>
