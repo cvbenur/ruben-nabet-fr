@@ -4,7 +4,7 @@
       ref="contactForm"
       v-model="formValid"
       lazy-validation
-      @submit.prevent="submitForm"
+      @submit.prevent="sendMessage"
     >
       <v-text-field
         v-model="name"
@@ -13,6 +13,7 @@
         color="secondary"
         :label="`${$t('pages.contact.fields.name')}_`"
         :rules="rules.reqTxt"
+        @change="update()"
       />
 
       <v-text-field
@@ -22,6 +23,17 @@
         color="secondary"
         :label="`${$t('pages.contact.fields.email')}_`"
         :rules="rules.reqEmail"
+        @change="update()"
+      />
+
+      <v-text-field
+        v-model="subject"
+        outlined
+        flat
+        color="secondary"
+        :label="`${$t('pages.contact.fields.subject')}_`"
+        :rules="rules.reqTxt"
+        @change="update()"
       />
 
       <v-textarea
@@ -31,6 +43,7 @@
         color="secondary"
         :label="`${$t('pages.contact.fields.message')}_`"
         :rules="rules.reqTxt"
+        @change="update()"
       />
 
       <v-row align="center" justify="center">
@@ -41,8 +54,9 @@
               color="secondary"
               class="text-none mt-5"
               large
-              type="submit"
               block
+              type="submit"
+              :href="mailto"
             >
               {{ $t('pages.contact.send') }}_
             </v-btn>
@@ -61,20 +75,22 @@ import { formRules } from '@/models/formRules'
 export default class ContactForm extends Vue {
   private formValid: boolean = true;
 
-  private name: string = '';
-  private email: string = '';
-  private message: string = '';
+  private name: string | null = null;
+  private email: string | null = null;
+  private subject: string | null = null;
+  private message: string | null = null;
+
+  private mailto: string = '';
+
+  private mailInfo: string = '\n\n\n' +
+    '--\n' +
+    `Name:\t${this.name ? this.name : '-'}\n` +
+    `Email:\t${this.email ? this.email : '-'}\n`
 
   private rules = formRules;
 
-  submitForm () {
-    if (this.formValid) {
-      this.$emit('submit', {
-        name: this.name,
-        email: this.email,
-        message: this.message
-      })
-    }
+  update () {
+    this.mailto = encodeURI(`mailto:contact@ruben-nabet.fr?subject=${`[Contact] ${this.subject}`}&body=${this.message + this.mailInfo}`)
   }
 }
 </script>

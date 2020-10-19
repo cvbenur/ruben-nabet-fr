@@ -8,14 +8,14 @@
           {{ $t('pages.contact.paragraph') }}
         </p>
 
-        <ContactForm @submit="handleMessage" />
+        <ContactForm />
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script lang="ts">
-import { Vue, Component, Emit } from 'vue-property-decorator'
+import { Vue, Component } from 'vue-property-decorator'
 
 @Component({
   head (): object {
@@ -25,17 +25,5 @@ import { Vue, Component, Emit } from 'vue-property-decorator'
   }
 })
 export default class Contact extends Vue {
-  private msgData: {
-    name: string,
-    email: string,
-    message: string
-  } | null = null;
-
-  @Emit('messageSent')
-  handleMessage (data: { name: string, email: string, message: string }) {
-    if (data.name && data.email && data.message) {
-      return data
-    }
-  }
 }
 </script>

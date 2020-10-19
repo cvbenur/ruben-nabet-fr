@@ -59,6 +59,7 @@
       "fields": {
         "name": "Votre nom",
         "email": "Votre adresse email",
+        "subject": "L'objet de votre message",
         "message": "Votre message"
       },
       "rules": {
