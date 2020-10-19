@@ -51,6 +51,38 @@
         "TypeScript",
         "SCSS"
       ]
+    },
+    {
+      "id": "lazone51",
+      "title": "LaZone51 - Efranchouille ⭐⭐",
+      "description": {
+        "fr": "Le site officiel d'Efranchouille pour la campagne BDE 2021-2021 d'Efrei Paris ! ⭐⭐",
+        "en": "Efranchouille's official website for the 2020-2021 Efrei Paris Student Union elections ! ⭐⭐"
+      },
+      "img": "pp_fb.jpg",
+      "link": "",
+      "repo": "https://github.com/cvbenur/lazone51",
+      "techList": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "VueJS",
+        "NodeJS"
+      ]
+    },
+    {
+      "id": "ducky-script-lang-vscode",
+      "title": "Ducky Script Language for VSCode",
+      "description": {
+        "fr": "Un extension pour VSCode permettant la prise en charge du langage DuckyScript.",
+        "en": "A VSCode extension allowing for support of the DuckyScript scripting language."
+      },
+      "img": "pp_fb.jpg",
+      "link": "https://marketplace.visualstudio.com/items?itemName=cvbenur.ducky-script-lang-vscode",
+      "repo": "https://github.com/cvbenur/ducky-script-lang-vscode",
+      "techList": [
+        "JavaScript"
+      ]
     }
   ]
 }

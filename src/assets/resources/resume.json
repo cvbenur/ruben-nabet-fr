@@ -1,4 +1,63 @@
 {
+  "lang": [
+    {
+      "en": {
+        "title": "French",
+        "level": "Mother Tongue"
+      },
+      "fr": {
+        "title": "Français",
+        "level": "Langue Maternelle"
+      }
+    },
+    {
+      "en": {
+        "title": "English",
+        "level": "Bilingual (TOEIC: 990)"
+      },
+      "fr": {
+        "title": "Anglais",
+        "level": "Bilingue (TOEIC: 990)"
+      }
+    },
+    {
+      "en": {
+        "title": "Spanish",
+        "level": "Conversational"
+      },
+      "fr": {
+        "title": "Espagnol",
+        "level": "Courant"
+      }
+    },
+    {
+      "en": {
+        "title": "Japanese",
+        "level": "Currently learning"
+      },
+      "fr": {
+        "title": "Japonais",
+        "level": "En cours d'apprentissage"
+      }
+    }
+  ],
+  "interests": [
+    {
+      "icon": "fas fa-headphones",
+      "fr": "Production musicale, DJ",
+      "en": "Music production, DJing"
+    },
+    {
+      "icon": "fas fa-futbol",
+      "fr": "Parkour, Kung-fu",
+      "en": "Parkour, Kung-fu"
+    },
+    {
+      "icon": "fas fa-book",
+      "fr": "Social engineering, Histoire",
+      "en": "Social engineering, History"
+    }
+  ],
   "pro": [
     {
       "en": {
