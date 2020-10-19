@@ -9,51 +9,59 @@
           cols="12"
           class="px-0 py-0"
         >
-          <v-hover v-slot:default="{ hover }">
-            <v-card
-              :elevation="hover ? 12 : 0"
-              :class="{ 'on-hover': hover }"
-              rounded
-              :color="$vuetify.theme.dark ? 'primary' : 'white'"
-              nuxt
-              :to="localePath(`/projects/${$t(`pages.projects.items[${nbr}].id`)}`)"
-            >
-              <v-row
-                align="center"
-                justify="center"
+          <v-lazy
+            v-model="isActive"
+            :options="{
+              threshold: .5
+            }"
+            transition="scroll-y-reverse-transition"
+          >
+            <v-hover v-slot:default="{ hover }">
+              <v-card
+                :elevation="hover ? 12 : 0"
+                :class="{ 'on-hover': hover }"
+                rounded
+                :color="$vuetify.theme.dark ? 'primary' : 'white'"
+                nuxt
+                :to="localePath(`/projects/${$t(`pages.projects.items[${nbr}].id`)}`)"
               >
-                <v-col
-                  cols="12"
-                  class="pt-0"
+                <v-row
+                  align="center"
+                  justify="center"
                 >
-                  <v-img
-                    class="rounded-top px-1"
-                    :src="require(`@/assets/img/${$t(`pages.projects.items[${nbr}].img`)}`)"
-                    alt="Ruben NABET"
-                    width="800"
-                    height="200"
-                  />
-
-                  <p :class="`pt-3 px-2 ${$vuetify.theme.dark ? 'white' : 'black'}--text`">
-                    {{ $t(`pages.projects.items[${nbr}].title`) }}_
-                  </p>
-
-                  <v-row
-                    align="center"
-                    justify="start"
+                  <v-col
+                    cols="12"
+                    class="pt-0"
                   >
-                    <v-col cols="12" class="px-5 my-0 py-0">
-                      <TechPill
-                        v-for="(tech, i) in techs"
-                        :key="i"
-                        :techno="tech"
-                      />
-                    </v-col>
-                  </v-row>
-                </v-col>
-              </v-row>
-            </v-card>
-          </v-hover>
+                    <v-img
+                      class="rounded-top px-1"
+                      :src="require(`@/assets/img/projects/${$t(`pages.projects.items[${nbr}].img`)}`)"
+                      alt="Ruben NABET"
+                      width="800"
+                      height="200"
+                    />
+
+                    <p :class="`pt-3 px-2 ${$vuetify.theme.dark ? 'white' : 'black'}--text`">
+                      {{ $t(`pages.projects.items[${nbr}].title`) }}_
+                    </p>
+
+                    <v-row
+                      align="center"
+                      justify="start"
+                    >
+                      <v-col cols="12" class="px-5 my-0 py-0">
+                        <TechPill
+                          v-for="(tech, i) in techs"
+                          :key="i"
+                          :techno="tech"
+                        />
+                      </v-col>
+                    </v-row>
+                  </v-col>
+                </v-row>
+              </v-card>
+            </v-hover>
+          </v-lazy>
         </v-col>
       </v-row>
     </v-container>
@@ -70,6 +78,8 @@ export default class ProjectTile extends Vue {
   nbr!: number;
 
   private techs: Array<Technology> | null = null;
+
+  private isActive: boolean = false;
 
   created () {
     if (!this.techs) {
