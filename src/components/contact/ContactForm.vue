@@ -1,69 +1,78 @@
 <template>
-  <v-container fluid>
-    <v-form
-      ref="contactForm"
-      v-model="formValid"
-      lazy-validation
-      @submit.prevent="sendMessage"
-    >
-      <v-text-field
-        v-model="name"
-        outlined
-        flat
-        color="secondary"
-        :label="`${$t('pages.contact.fields.name')}_`"
-        :rules="rules.reqTxt"
-        @change="update()"
-      />
+  <v-container class="fluid fill-height">
+    <v-row align="center" justify="center">
+      <v-col cols="12" class="pa-0">
+        <v-text-field
+          v-model="name"
+          outlined
+          flat
+          color="secondary"
+          :label="`${$t('pages.contact.fields.name')}_`"
+          :rules="rules.reqTxt"
+          @change="update()"
+        />
+      </v-col>
+    </v-row>
 
-      <v-text-field
-        v-model="email"
-        outlined
-        flat
-        color="secondary"
-        :label="`${$t('pages.contact.fields.email')}_`"
-        :rules="rules.reqEmail"
-        @change="update()"
-      />
+    <v-row align="center" justify="center">
+      <v-col cols="12" class="pa-0">
+        <v-text-field
+          v-model="email"
+          outlined
+          flat
+          color="secondary"
+          :label="`${$t('pages.contact.fields.email')}_`"
+          :rules="rules.reqEmail"
+          @change="update()"
+        />
+      </v-col>
+    </v-row>
 
-      <v-text-field
-        v-model="subject"
-        outlined
-        flat
-        color="secondary"
-        :label="`${$t('pages.contact.fields.subject')}_`"
-        :rules="rules.reqTxt"
-        @change="update()"
-      />
+    <v-row align="center" justify="center">
+      <v-col cols="12" class="pa-0">
+        <v-text-field
+          v-model="subject"
+          outlined
+          flat
+          color="secondary"
+          :label="`${$t('pages.contact.fields.subject')}_`"
+          :rules="rules.reqTxt"
+          @change="update()"
+        />
+      </v-col>
+    </v-row>
 
-      <v-textarea
-        v-model="message"
-        outlined
-        flat
-        color="secondary"
-        :label="`${$t('pages.contact.fields.message')}_`"
-        :rules="rules.reqTxt"
-        @change="update()"
-      />
+    <v-row align="center" justify="center">
+      <v-col cols="12" class="pa-0">
+        <v-textarea
+          v-model="message"
+          outlined
+          flat
+          color="secondary"
+          :label="`${$t('pages.contact.fields.message')}_`"
+          :rules="rules.reqTxt"
+          @change="update()"
+        />
+      </v-col>
+    </v-row>
 
-      <v-row align="center" justify="center">
-        <v-col cols="12" sm="4">
-          <v-hover v-slot:default="{ hover }">
-            <v-btn
-              :elevation="hover ? 12 : 0"
-              color="secondary"
-              class="text-none mt-5"
-              large
-              block
-              type="submit"
-              :href="mailto"
-            >
-              {{ $t('pages.contact.send') }}_
-            </v-btn>
-          </v-hover>
-        </v-col>
-      </v-row>
-    </v-form>
+    <v-row align="center" justify="center">
+      <v-col cols="12" sm="4" class="pa-0">
+        <v-hover v-slot:default="{ hover }">
+          <v-btn
+            :elevation="hover ? 12 : 0"
+            color="secondary"
+            class="text-none"
+            large
+            block
+            type="submit"
+            :href="mailto"
+          >
+            {{ $t('pages.contact.send') }}_
+          </v-btn>
+        </v-hover>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
@@ -73,12 +82,10 @@ import { formRules } from '@/models/formRules'
 
 @Component({})
 export default class ContactForm extends Vue {
-  private formValid: boolean = true;
-
-  private name: string | null = null;
-  private email: string | null = null;
-  private subject: string | null = null;
-  private message: string | null = null;
+  private name: string = '';
+  private email: string = '';
+  private subject: string = '';
+  private message: string = '';
 
   private mailto: string = '';
 
@@ -91,6 +98,10 @@ export default class ContactForm extends Vue {
 
   update () {
     this.mailto = encodeURI(`mailto:contact@ruben-nabet.fr?subject=${`[Contact] ${this.subject}`}&body=${this.message + this.mailInfo}`)
+  }
+
+  created () {
+    this.update()
   }
 }
 </script>
