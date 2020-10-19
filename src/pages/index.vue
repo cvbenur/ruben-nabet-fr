@@ -129,6 +129,7 @@
       <v-col
         v-for="(social, i) in socials"
         :key="i"
+        class="d-flex justify-center"
         cols="4"
         sm="1"
       >
