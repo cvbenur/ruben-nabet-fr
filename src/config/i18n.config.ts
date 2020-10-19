@@ -1,4 +1,4 @@
-import { pro, edu } from '../assets/resources/experiences.json'
+import { pro, edu } from '../assets/resources/resume.json'
 import { projects } from '../assets/resources/projects.json'
 
 import en from '../assets/locales/en.json'
