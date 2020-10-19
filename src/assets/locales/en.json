@@ -21,14 +21,26 @@
       "about": {
         "title": "About me",
         "paragraphs": {
-          "first": "Nam a ultricies mauris, sit amet euismod enim. Integer pulvinar, justo quis mollis rutrum, lacus quam ultrices turpis, ut iaculis sem leo sed neque. Aenean eget commodo lectus. Nam ut diam libero. Nam aliquam metus mauris, id rhoncus arcu blandit id. Nulla sagittis eleifend tortor, vulputate placerat ante auctor sit amet. Aenean fringilla, lacus nec lobortis consectetur, justo massa molestie nisi, id pretium mauris magna a ligula. Aenean nisl sapien, dictum ut dignissim consequat, rhoncus vel ipsum. Fusce convallis dolor id consectetur volutpat."
+          "first": "My name is Ruben, I'm 22, and I'm currently in Computer Engineering school in the Paris Area.",
+          "second": "I’ve always been curious and love to experiment with new tech, new tools and new programming languages.",
+          "third": "I’ve been programming from an early age, and I’ve written and published a number of apps and programs (Discord Bots, VSCode Extensions, and websites)."
         }
       }
     },
     "resume": {
       "title": "Resume",
       "heading": "My resume",
+      "text": "4th-year Software Engineering student looking for an internship between Apr. 2021 and Sept. 2021 (4 months minimum).",
       "see": "Check out my resume",
+      "lang": {
+        "title": "Spoken languages",
+        "human": "(the human ones)",
+        "items": []
+      },
+      "interests": {
+        "title": "Interests",
+        "items": []
+      },
       "pro": {
         "title": "Professional experience",
         "items": []
@@ -117,6 +129,7 @@
     "project": "the project",
     "website": "website",
     "on": "on",
-    "socials": "Socials"
+    "socials": "Socials",
+    "check": "Check them out"
   }
 }
