@@ -2,10 +2,14 @@
   <v-container class="fluid fill-height">
     <Heading :title="$t('pages.projects.heading')" />
 
+    <p class="text-h5 d-inline text-justify mt-5">
+      {{ $t('pages.projects.text') }}
+    </p>
+
     <v-row
       align="center"
       justify="start"
-      class="mt-10"
+      class="mt-5"
     >
       <v-col
         v-for="i in nbrPrj"

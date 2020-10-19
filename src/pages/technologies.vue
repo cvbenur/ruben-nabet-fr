@@ -1,6 +1,10 @@
 <template>
-  <v-container class="fluid fill-height d-flex justify-center">
+  <v-container class="fluid fill-height">
     <Heading :title="$t(`pages.technologies.title`)" />
+
+    <p class="text-h5 d-inline text-justify mt-5">
+      {{ $t('pages.technologies.text') }}
+    </p>
 
     <section>
       <TechCategory

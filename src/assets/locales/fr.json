@@ -44,6 +44,7 @@
     },
     "technologies": {
       "title": "Technologies",
+      "text": "Les technologies avec lesquelles j'ai l'habitude de travailler.",
       "categories": {
         "web": "Technologies Web",
         "deployment": "Déploiement",
@@ -70,6 +71,7 @@
     },
     "projects": {
       "title": "Mes projets",
+      "text": "Les projets sur lesquels j'ai travaillé.",
       "heading": "Mes projets",
       "featured": "Projets mis en avant",
       "other": "autre projets",
