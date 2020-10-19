@@ -2,7 +2,7 @@
   <v-container fluid>
     <Heading :title="$t(`pages.resume.heading`)" />
 
-    <section>
+    <section class="mt-10">
       <Title
         :title="$t(`pages.resume.pro.title`)"
         alignment="right"
@@ -21,7 +21,7 @@
       </v-row>
     </section>
 
-    <section>
+    <section class="mt-10">
       <Title :title="$t(`pages.resume.edu.title`)" />
 
       <v-row
