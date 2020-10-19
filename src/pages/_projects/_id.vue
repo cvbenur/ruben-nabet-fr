@@ -16,7 +16,7 @@
       >
         <v-img
           class="custom-rounded px-1"
-          :src="require(`@/assets/img/${$t(`pages.projects.items[${nbr}].img`)}`)"
+          :src="require(`@/assets/img/projects/${$t(`pages.projects.items[${nbr}].img`)}`)"
           alt="Ruben NABET"
           width="200"
           height="320"
