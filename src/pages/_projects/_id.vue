@@ -106,7 +106,7 @@ const projects = require('@/assets/resources/projects.json').projects
 })
 export default class ProjectPage extends Vue {
   private id: string = this.$route.params.id;
-  private nbr: number = 0;
+  private nbr: number | null = null;
   private project: Project | null = null;
   private techs: Array<Technology> | null = null;
 
@@ -119,13 +119,11 @@ export default class ProjectPage extends Vue {
       this.project = this.getPageData() as unknown as Project
     }
 
-    if (this.nbr === -1) {
-      this.nbr = projects.indexOf(
-        (p: any) => p.id === this.id
-      )
+    if (!this.nbr) {
+      this.nbr = projects.indexOf(this.project)
     }
 
-    if (!this.techs) {
+    if (!this.techs && this.nbr !== null) {
       this.techs = []
 
       projects[this.nbr].techList.forEach(
