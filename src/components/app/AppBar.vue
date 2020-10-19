@@ -19,7 +19,6 @@
             text
             :href="localePath('/')"
             class="text-none py-8"
-            @click.native="setActive(-1)"
           >
             <v-avatar>
               <img
@@ -44,8 +43,7 @@
               class="text-none"
               text
               ripple
-              :color="item.active ? 'secondary' : 'white'"
-              @click="setActive(i)"
+              :color="$route.path.endsWith(item.link) ? 'secondary' : 'white'"
             >
               {{ $t(`navlinks.${item.title}`) }}_
             </v-btn>
@@ -149,10 +147,9 @@
                     v-for="(item, i) in items"
                     :key="i"
                     text
-                    :color="item.active ? 'secondary' : 'white'"
+                    :color="$route.path.endsWith(item.link) ? 'secondary' : 'white'"
                     nuxt
                     :to="localePath(`${item.link}`)"
-                    @click="setActive(i)"
                   >
                     {{ $t(`navlinks.${item.title}`) }}_
                   </v-list-item>
@@ -254,29 +251,17 @@ export default class AppBar extends Vue {
   private items = [
     {
       title: 'resume',
-      link: '/resume',
-      active: false
+      link: '/resume'
     },
     {
       title: 'technologies',
-      link: '/technologies',
-      active: false
+      link: '/technologies'
     },
     {
       title: 'projects',
-      link: '/projects',
-      active: false
+      link: '/projects'
     }
   ];
-
-  // Link handling
-  setActive (n: number) {
-    for (let i = 0; i < this.items.length; i++) {
-      i !== n || n === -1
-        ? this.items[i].active = false
-        : this.items[i].active = true
-    }
-  }
 
   // Drawer handling
   toggleDrawer () {
@@ -287,16 +272,6 @@ export default class AppBar extends Vue {
   setTheme () {
     this.$vuetify.theme.dark = !this.$vuetify.theme.dark
     this.toggleDrawer()
-  }
-
-  created () {
-    this.items.forEach(
-      (item) => {
-        if (this.$route.path.endsWith(item.link)) {
-          item.active = true
-        }
-      }
-    )
   }
 }
 </script>
