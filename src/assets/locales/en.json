@@ -103,7 +103,7 @@
         },
         "hosting": {
           "title": "Hosting",
-          "text": "The website Ruben NABET is hosted by ______, located at :",
+          "text": "The website Ruben NABET is hosted personally by Ruben NABET.",
           "address": {
             "street": "",
             "city": "",
@@ -118,7 +118,7 @@
     }
   },
   "footer": {
-    "legals": "Legal mentions",
+    "legals": "Legal notice",
     "credits": {
       "first": "Designed & powered with",
       "second": "by"
