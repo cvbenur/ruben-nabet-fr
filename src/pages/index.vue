@@ -68,7 +68,7 @@
       </v-row>
 
       <v-row align="center" justify="center" class="mt-5">
-        <v-col cols="12" sm="4">
+        <v-col cols="12" sm="6">
           <v-hover v-slot:default="{ hover }">
             <v-btn
               :elevation="hover ? 12 : 0"
@@ -105,7 +105,7 @@
     </v-row>
 
     <v-row align="center" justify="center" class="mb-5">
-      <v-col cols="12" sm="4">
+      <v-col cols="12" sm="6">
         <v-hover v-slot:default="{ hover }">
           <v-btn
             :elevation="hover ? 12 : 0"

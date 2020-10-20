@@ -20,34 +20,23 @@
               <v-card
                 :color="`${$vuetify.theme.dark ? 'black' : 'white'}`"
                 elevation="0"
-                height="200"
+                height="250"
+                class="d-flex flex-column"
               >
-                <p :class="`text-h6 py-2 px-4 mb-0 ${$vuetify.theme.dark ? 'white' : 'black'}--text`">
-                  <span>{{ $t('pages.resume.lang.title') }}_</span> <span class="font-italic text-body-2">{{ $t('pages.resume.lang.human') }}</span>
-                </p>
+                <v-card-title :class="`text-h6 py-2 px-4 mb-0 ${$vuetify.theme.dark ? 'white' : 'black'}--text`">
+                  <span class="pr-2">{{ $t('pages.resume.lang.title') }}_</span><span class="font-italic text-body-2">{{ $t('pages.resume.lang.human') }}</span>
+                </v-card-title>
 
                 <hr class="secondary mx-4 my-1">
 
-                <v-row align="center" justify="center" class="px-4">
-                  <v-col cols="5" class="py-2 py-md-4">
-                    <p
-                      v-for="i in lang"
-                      :key="i"
-                      :class="`text-body-1 mb-0 mb-md-1 ${$vuetify.theme.dark ? 'white' : 'black'}--text`"
-                    >
-                      <span>{{ $t(`pages.resume.lang.items[${i-1}].title`) }} :</span>
-                    </p>
-                  </v-col>
-
-                  <v-col cols="7" class="py-2 py-md-4">
-                    <p
-                      v-for="i in lang"
-                      :key="i"
-                      :class="`text-body-1 mb-0 mb-md-1 ${$vuetify.theme.dark ? 'white' : 'black'}--text`"
-                    >
-                      <span class="text-body-2">{{ $t(`pages.resume.lang.items[${i-1}].level`) }}</span>
-                    </p>
-                  </v-col>
+                <v-row class="pt-2 px-3">
+                  <v-card-text
+                    v-for="i in lang"
+                    :key="i"
+                    :class="`py-0 my-0 ${$vuetify.theme.dark ? 'white' : 'black'}--text`"
+                  >
+                    {{ $t(`pages.resume.lang.items[${i-1}].title`) }} : {{ $t(`pages.resume.lang.items[${i-1}].level`) }}
+                  </v-card-text>
                 </v-row>
               </v-card>
             </v-lazy>
@@ -64,36 +53,29 @@
               <v-card
                 :color="`${$vuetify.theme.dark ? 'black' : 'white'}`"
                 elevation="0"
-                height="200"
+                height="250"
+                class="d-flex flex-column"
               >
-                <p :class="`text-h6 py-2 px-4 mb-0 ${$vuetify.theme.dark ? 'white' : 'black'}--text`">
+                <v-card-title :class="`text-h6 py-2 px-4 mb-0 ${$vuetify.theme.dark ? 'white' : 'black'}--text`">
                   {{ $t('pages.resume.interests.title') }}_
-                </p>
+                </v-card-title>
 
                 <hr class="secondary mx-4 my-1">
 
                 <v-row
                   v-for="i in interests"
                   :key="i"
-                  align="center"
-                  justify="center"
-                  class="px-4 py-0 pb-1"
+                  class="pt-4"
                 >
-                  <v-col cols="3" class="text-center my-0 py-2">
+                  <v-card-text
+                    :class="`py-0 my-0 ${$vuetify.theme.dark ? 'white' : 'black'}--text`"
+                  >
                     <v-icon
-                      :class="`my-0 py-0 ${$vuetify.theme.dark ? 'white' : 'black'}--text`"
+                      :class="`my-0 py-0 mx-3 ${$vuetify.theme.dark ? 'white' : 'black'}--text`"
                     >
                       {{ $t(`pages.resume.interests.items[${i-1}].icon`) }}
-                    </v-icon>
-                  </v-col>
-
-                  <v-col cols="9" class="my-0 py-2">
-                    <p
-                      :class="`text-body-1 my-0 ${$vuetify.theme.dark ? 'white' : 'black'}--text`"
-                    >
-                      <span class="text-body-2">{{ $t(`pages.resume.interests.items[${i-1}].text`) }}</span>
-                    </p>
-                  </v-col>
+                    </v-icon>{{ $t(`pages.resume.interests.items[${i-1}].text`) }}
+                  </v-card-text>
                 </v-row>
               </v-card>
             </v-lazy>
@@ -108,33 +90,26 @@
               transition="scroll-y-reverse-transition"
             >
               <v-card
-                :color="`${$vuetify.theme.dark ? 'black' : 'white'}`"
+                :color="`${$vuetify.theme.dark ? 'black' : 'white'} d-flex flex-column`"
                 elevation="0"
-                height="200"
+                height="250"
               >
-                <p :class="`text-h6 py-2 px-4 mb-0 ${$vuetify.theme.dark ? 'white' : 'black'}--text`">
+                <v-card-title :class="`text-h6 py-2 px-4 mb-0 ${$vuetify.theme.dark ? 'white' : 'black'}--text`">
                   {{ $t('pages.technologies.title') }}__
-                </p>
+                </v-card-title>
 
                 <hr class="secondary mx-4 my-1">
 
-                <v-row
-                  align="center"
-                  justify="center"
-                  class="px-4 py-0"
-                >
-                  <v-col cols="12">
-                    <p :class="`mb-2 ${$vuetify.theme.dark ? 'white' : 'black'}--text`">
-                      {{ $t('pages.technologies.text') }}
-                    </p>
-                  </v-col>
+                <v-card-text :class="`mb-0 ${$vuetify.theme.dark ? 'white' : 'black'}--text`">
+                  {{ $t('pages.technologies.text') }}
+                </v-card-text>
 
-                  <v-spacer />
+                <v-spacer />
 
-                  <v-col cols="8">
+                <v-card-actions class="pt-0 pb-3">
+                  <v-row align="center" justify="center">
                     <v-hover v-slot:default="{ hover }">
                       <v-btn
-                        block
                         :elevation="hover ? 12 : 0"
                         dark
                         class="text-none"
@@ -145,8 +120,8 @@
                         {{ $t('misc.check') }}_
                       </v-btn>
                     </v-hover>
-                  </v-col>
-                </v-row>
+                  </v-row>
+                </v-card-actions>
               </v-card>
             </v-lazy>
           </v-col>
@@ -162,31 +137,25 @@
               <v-card
                 :color="`${$vuetify.theme.dark ? 'black' : 'white'}`"
                 elevation="0"
-                height="200"
+                height="250"
+                class="d-flex flex-column"
               >
-                <p :class="`text-h6 py-2 px-4 mb-0 ${$vuetify.theme.dark ? 'white' : 'black'}--text`">
+                <v-card-title :class="`text-h6 py-2 px-4 mb-0 ${$vuetify.theme.dark ? 'white' : 'black'}--text`">
                   {{ $t('pages.projects.heading') }}_
-                </p>
+                </v-card-title>
 
                 <hr class="secondary mx-4 my-1">
 
-                <v-row
-                  align="center"
-                  justify="center"
-                  class="px-4 py-0"
-                >
-                  <v-col cols="12">
-                    <p :class="`mb-8 ${$vuetify.theme.dark ? 'white' : 'black'}--text`">
-                      {{ $t('pages.projects.text') }}
-                    </p>
-                  </v-col>
+                <v-card-text :class="`mb-2 ${$vuetify.theme.dark ? 'white' : 'black'}--text`">
+                  {{ $t('pages.projects.text') }}
+                </v-card-text>
 
-                  <v-spacer />
+                <v-spacer />
 
-                  <v-col cols="8">
+                <v-card-actions class="pt-0 pb-3">
+                  <v-row align="center" justify="center">
                     <v-hover v-slot:default="{ hover }">
                       <v-btn
-                        block
                         :elevation="hover ? 12 : 0"
                         dark
                         class="text-none"
@@ -197,8 +166,8 @@
                         {{ $t('misc.check') }}_
                       </v-btn>
                     </v-hover>
-                  </v-col>
-                </v-row>
+                  </v-row>
+                </v-card-actions>
               </v-card>
             </v-lazy>
           </v-col>
@@ -248,7 +217,7 @@
     >
       <v-col
         cols="12"
-        sm="4"
+        sm="6"
       >
         <v-hover v-slot:default="{ hover }">
           <v-btn
@@ -275,7 +244,7 @@
     >
       <v-col
         cols="12"
-        sm="4"
+        sm="6"
       >
         <v-hover v-slot:default="{ hover }">
           <v-btn
