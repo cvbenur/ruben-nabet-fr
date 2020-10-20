@@ -18,6 +18,15 @@
             class="text-none text-caption font-weight-light"
             text
             dark
+            :href="localePath('/contact')"
+          >
+            {{ $t('pages.contact.title') }}
+          </v-btn>
+
+          <v-btn
+            class="text-none text-caption font-weight-light"
+            text
+            dark
             :href="localePath('/legal-notice')"
           >
             {{ $t('footer.legals') }}
