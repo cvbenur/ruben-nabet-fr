@@ -1,0 +1,135 @@
+{   
+  "navlinks": {
+    "resume": "CV",
+    "technologies": "Technologies",
+    "projects": "Mes projets"
+  },
+  "notifications": {
+    "theme": {
+      "light": "Thème réglé sur Clair.",
+      "dark": "Thème réglé sur Sombre."
+    },
+    "locale": "Langue réglée sur Français."
+  },
+  "pages": {
+    "index": {
+      "title": "Accueil",
+      "mainTitle": {
+        "first": "Développeur",
+        "second": "Full-Stack"
+      },
+      "about": {
+        "title": "A propos de moi",
+        "paragraphs": {
+          "first": "Je m'appelle Ruben, j'ai 22 ans, et je suis actuellement en M1 d'Ingénierie Informatique en banlieue parisienne.",
+          "second": "J’ai toujours été curieux et j’adore jouer avec de nouvelles technologies, de nouveaux outils et de nouveaux langages de programmation.",
+          "third": "Je programme depuis très jeune, et j’ai écrit et publié un certain nombre d’applications et de programmes (Bots Discord, Extensions VSCode, et sites Internet)."
+        }
+      }
+    },
+    "resume": {
+      "title": "CV",
+      "heading": "Mon CV",
+      "text": "Étudiant en M1 Software Engineering à la recherche d’un stage entre Avril 2021 et Septembre 2021 (4 mois minimum).",
+      "see": "Voir mon CV",
+      "lang": {
+        "title": "Langues parlées",
+        "human": "(humaines)",
+        "items": []
+      },
+      "interests": {
+        "title": "Activités",
+        "items": []
+      },
+      "pro": {
+        "title": "Expérience professionnelle",
+        "items": []
+      },
+      "edu": {
+        "title": "Formation",
+        "items": []
+      },
+      "dl": {
+        "text": "Télécharger mon CV",
+        "lang": "FR"
+      }
+    },
+    "technologies": {
+      "title": "Technologies",
+      "text": "Les technologies avec lesquelles j'ai l'habitude de travailler.",
+      "categories": {
+        "web": "Technologies Web",
+        "deployment": "Déploiement",
+        "db": "Bases de Données",
+        "devTools": "Outils de Développement",
+        "appDev": "Développement d'Applications"
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "text": "Me contacter",
+      "paragraph": "Envoyez-moi un petit message, je les lis tous !",
+      "fields": {
+        "name": "Votre nom",
+        "email": "Votre adresse email",
+        "subject": "L'objet de votre message",
+        "message": "Votre message"
+      },
+      "rules": {
+        "required": "Ce champ doit être rempli.",
+        "email": "Ce champs doit contenir une adresse email valide."
+      },
+      "send": "Envoyer"
+    },
+    "projects": {
+      "title": "Mes projets",
+      "text": "Les projets sur lesquels j'ai travaillé.",
+      "heading": "Mes projets",
+      "featured": "Projets mis en avant",
+      "other": "autre projets",
+      "items": []
+    },
+    "legals": {
+      "heading": "Mentions légales",
+      "paragraphs": {
+        "first": "Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l’économie numérique, il est précisé aux utilisateurs du site ruben-nabet.fr l’identité des différents intervenants dans le cadre de sa réalisation et de son suivi.",
+        "edition": {
+          "title": "Édition du site",
+          "text": "Le site ruben-nabet.fr est un site personnel, édité à titre personnel par Ruben NABET."
+        },
+        "publishing": {
+          "title": "Publication du site",
+          "text": "Le site est publié à titre personnel par Ruben NABET."
+        },
+        "hosting": {
+          "title": "Hébergement",
+          "text": "Le site ruben-nabet.fr est hébergé à titre personnel par Ruben NABET.",
+          "address": {
+            "street": "",
+            "city": "",
+            "country": ""
+          }
+        },
+        "contact": {
+          "title": "Me contacter",
+          "text": "Via email"
+        }
+      }
+    }
+  },
+  "footer": {
+    "legals": "Mentions légales",
+    "credits": {
+      "first": "Conçu & propulsé avec",
+      "second": "par"
+    }
+  },
+  "misc": {
+    "see": "Voir",
+    "project": "le projet",
+    "website": "le site",
+    "on": "sur",
+    "socials": "Retrouver le projet",
+    "check": "Aller voir"
+  }
+}

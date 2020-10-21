@@ -1,0 +1,120 @@
+{
+  "projects": [
+    {
+      "id": "sentin-ailes",
+      "title": "Sentin'Ailes",
+      "description": {
+        "fr": "Un site de mise en relation des services d'aide à la personne. Un projet Human'App.",
+        "en": "Hub website for life auxiliary services. A Human'App project."
+      },
+      "img": "human-app.png",
+      "link": "",
+      "repo": "",
+      "techList": [
+        "VueJS",
+        "NodeJS",
+        "JavaScript",
+        "Firebase"
+      ]
+    },
+    {
+      "id": "ruben-nabet-fr-v1",
+      "title": "Ruben-Nabet.fr - v1.0",
+      "description": {
+        "fr": "Ce site Internet.",
+        "en": "This very website."
+      },
+      "img": "pp_fb.jpg",
+      "link": "https://ruben-nabet.fr/",
+      "repo": "https://github.com/cvbenur/ruben-nabet-fr",
+      "techList": [
+        "VueJS",
+        "NodeJS",
+        "NuxtJS",
+        "TypeScript",
+        "SCSS"
+      ]
+    },
+    {
+      "id": "carson-the-statbot",
+      "title": "Carson the Discord StatBot",
+      "description": {
+        "fr": "Un bot Discord qui compile des stats sur un serveur, et renvoie de très jolis graphiques. Fait avec DiscordJS.",
+        "en": "A Discord bot which compiles stats on a server, and sends back very pretty graphs. Made with DiscordJS."
+      },
+      "img": "carson.png",
+      "link": "",
+      "repo": "https://github.com/cvbenur/carson-the-statbot",
+      "techList": [
+        "TypeScript",
+        "NodeJS"
+      ]
+    },
+    {
+      "id": "carson-website",
+      "title": "Carson the StatBot - Website",
+      "description": {
+        "fr": "Le site Internet de Carson le StatBot Discord.",
+        "en": "Carson the Discord StatBot's website."
+      },
+      "img": "carson.png",
+      "link": "",
+      "repo": "https://github.com/cvbenur/carson-website",
+      "techList": [
+        "VueJS",
+        "NodeJS",
+        "TypeScript",
+        "Firebase"
+      ]
+    },
+    {
+      "id": "ducky-script-lang-vscode",
+      "title": "Ducky Script Language for VSCode",
+      "description": {
+        "fr": "Un extension pour VSCode permettant la prise en charge du langage DuckyScript.",
+        "en": "A VSCode extension allowing for support of the DuckyScript scripting language."
+      },
+      "img": "ducky.png",
+      "link": "https://marketplace.visualstudio.com/items?itemName=cvbenur.ducky-script-lang-vscode",
+      "repo": "https://github.com/cvbenur/ducky-script-lang-vscode",
+      "techList": [
+        "JavaScript"
+      ]
+    },
+    {
+      "id": "lazone51",
+      "title": "LaZone51 - Efranchouille ⭐⭐",
+      "description": {
+        "fr": "Le site officiel d'Efranchouille pour la campagne BDE 2021-2021 d'Efrei Paris ! ⭐⭐",
+        "en": "Efranchouille's official website for the 2020-2021 Efrei Paris Student Union elections ! ⭐⭐"
+      },
+      "img": "efranchouille.png",
+      "link": "",
+      "repo": "https://github.com/cvbenur/lazone51",
+      "techList": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "VueJS",
+        "NodeJS"
+      ]
+    },
+    {
+      "id": "duckyhub",
+      "title": "DuckyHub",
+      "description": {
+        "fr": "Un site pour apprendre, manipuler et générer facilement du DuckyScript.",
+        "en": "A website made to easily learn, manipulate and generate DuckyScript."
+      },
+      "img": "ducky.png",
+      "link": "",
+      "repo": "https://github.com/cvbenur/duckyhub-website",
+      "techList": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Firebase"
+      ]
+    }
+  ]
+}

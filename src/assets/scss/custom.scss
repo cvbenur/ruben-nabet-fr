@@ -1,0 +1,44 @@
+/*    ==    Drop shadows    ==    */
+
+@mixin box-shadow($params) {
+  -webkit-box-shadow: $params;
+  -moz-box-shadow: $params;
+  box-shadow: $params;
+
+  border-radius: $border-radius;
+}
+
+.shifted-bottom-right {
+  @include box-shadow(8px 8px 0px $shadow-color);
+  transform: translateX(-$border-radius);
+}
+
+.shifted-top-right {
+  @include box-shadow(8px -8px 0px $shadow-color);
+  transform: translateX(-$border-radius);
+}
+
+.shifted-top-left {
+  @include box-shadow(-8px -8px 0px $shadow-color);
+  transform: translateX($border-radius);
+}
+
+.shifted-bottom-left {
+  @include box-shadow(-8px 8px 0px $shadow-color);
+  transform: translateX($border-radius);
+}
+
+/*    ==    Text colors   ==    */
+.text-custom-blue {
+  color: #6699cc;
+}
+
+/*    ==    Custom Border radius    ==    */
+.custom-rounded {
+  border-radius: $border-radius;
+}
+
+.rounded-top {
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+}

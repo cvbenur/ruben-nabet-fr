@@ -1,0 +1,135 @@
+{   
+  "navlinks": {
+    "resume": "Resume",
+    "technologies": "Technologies",
+    "projects": "My projects"
+  },
+  "notifications": {
+    "theme": {
+      "light": "Theme set to Light.",
+      "dark": "Theme set to Dark."
+    },
+    "locale": "Language set to English"
+  },
+  "pages": {
+    "index": {
+      "title": "Home",
+      "mainTitle": {
+        "first": "Full-Stack",
+        "second": "Developer"
+      },
+      "about": {
+        "title": "About me",
+        "paragraphs": {
+          "first": "My name is Ruben, I'm 22, and I'm currently in Computer Engineering school in the Paris Area.",
+          "second": "I’ve always been curious and love to experiment with new tech, new tools and new programming languages.",
+          "third": "I’ve been programming from an early age, and I’ve written and published a number of apps and programs (Discord Bots, VSCode Extensions, and websites)."
+        }
+      }
+    },
+    "resume": {
+      "title": "Resume",
+      "heading": "My resume",
+      "text": "4th-year Software Engineering student looking for an internship between Apr. 2021 and Sept. 2021 (4 months minimum).",
+      "see": "Check out my resume",
+      "lang": {
+        "title": "Languages",
+        "human": "(the human ones)",
+        "items": []
+      },
+      "interests": {
+        "title": "Interests",
+        "items": []
+      },
+      "pro": {
+        "title": "Professional experience",
+        "items": []
+      },
+      "edu": {
+        "title": "Education",
+        "items": []
+      },
+      "dl": {
+        "text": "Download my resume",
+        "lang": "EN"
+      }
+    },
+    "technologies": {
+      "title": "Technologies",
+      "text": "The technologies I'm used to working with.",
+      "categories": {
+        "web": "Web Technologies",
+        "deployment": "Deployment",
+        "db": "Databases",
+        "devTools": "Development Tools",
+        "appDev": "App Development"
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "text": "Get in touch with me",
+      "paragraph": "Just shoot me a message, I'll be sure to get back to you !",
+      "fields": {
+        "name": "Your name",
+        "email": "Your email address",
+        "subject": "The subject of your message",
+        "message": "Your message"
+      },
+      "rules": {
+        "required": "This field must be filled out.",
+        "email": "This field must contain a valid email address."
+      },
+      "send": "Send"
+    },
+    "projects": {
+      "title": "My projects",
+      "text": "The projects which I've worked on.",
+      "heading": "My projects",
+      "featured": "Featured projects",
+      "other": "other project",
+      "items": []
+    },
+    "legals": {
+      "heading": "Legal notice",
+      "paragraphs": {
+        "first": "In compliance with the dispositions taken by French law n° 2004-575 of June 21st, 2004 for the trust in the digital economy, users of the website ruben-nabet.fr are hereby informed of the identity of the various parties involved in its realization and its maintenance.",
+        "edition": {
+          "title": "Website's edition",
+          "text": "The website ruben-nabet.fr is a personal website, edited personally by Ruben NABET."
+        },
+        "publishing": {
+          "title": "Website's publishing",
+          "text": "The website is published personally by Ruben NABET."
+        },
+        "hosting": {
+          "title": "Hosting",
+          "text": "The website Ruben NABET is hosted personally by Ruben NABET.",
+          "address": {
+            "street": "",
+            "city": "",
+            "country": ""
+          }
+        },
+        "contact": {
+          "title": "Get in touch with me",
+          "text": "Via email"
+        }
+      }
+    }
+  },
+  "footer": {
+    "legals": "Legal notice",
+    "credits": {
+      "first": "Designed & powered with",
+      "second": "by"
+    }
+  },
+  "misc": {
+    "see": "See",
+    "project": "the project",
+    "website": "website",
+    "on": "on",
+    "socials": "Socials",
+    "check": "Check them out"
+  }
+}
