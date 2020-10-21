@@ -17,6 +17,7 @@
         cols="12"
         sm="12"
         md="6"
+        xl="4"
         class="pt-0"
       >
         <ProjectTile :nbr="i-1" />

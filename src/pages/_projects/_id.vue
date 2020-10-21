@@ -6,12 +6,13 @@
       align="center"
       justify="center"
     >
-      <v-col cols="12" class="pt-8">
+      <v-col cols="12" xl="8" class="pt-8">
         <p>{{ $t(`pages.projects.items[${nbr}].description`) }}</p>
       </v-col>
 
       <v-col
         cols="12"
+        xl="8"
         class="d-flex justify-center"
       >
         <v-img
@@ -26,16 +27,16 @@
 
     <v-row
       align="center"
-      justify="start"
+      justify="center"
     >
-      <v-col class="pb-0">
+      <v-col cols="12" xl="8" class="pb-0 text-left">
         <p class="mb-0">
           Technologies :
         </p>
       </v-col>
     </v-row>
     <v-row align="center" justify="center">
-      <v-col>
+      <v-col xl="8">
         <TechPill
           v-for="(tech, i) in techs"
           :key="i"

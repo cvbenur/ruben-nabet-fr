@@ -50,7 +50,7 @@
         justify="center"
         class="mt-8"
       >
-        <v-col cols="12">
+        <v-col cols="12" xl="8">
           <p class="ma-0 text-h5 text-justify">
             Bonjour !
           </p>
@@ -68,7 +68,7 @@
       </v-row>
 
       <v-row align="center" justify="center" class="mt-5">
-        <v-col cols="12" sm="6">
+        <v-col cols="12" sm="6" xl="4">
           <v-hover v-slot:default="{ hover }">
             <v-btn
               :elevation="hover ? 12 : 0"
@@ -99,13 +99,14 @@
         :key="i"
         cols="12"
         sm="6"
+        xl="4"
       >
         <ProjectTile :nbr="i-1" />
       </v-col>
     </v-row>
 
     <v-row align="center" justify="center" class="mb-5">
-      <v-col cols="12" sm="6">
+      <v-col cols="12" sm="6" xl="4">
         <v-hover v-slot:default="{ hover }">
           <v-btn
             :elevation="hover ? 12 : 0"
@@ -131,6 +132,10 @@
 
     <v-row align="center" justify="center" class="mt-4">
       <v-col cols="12">
+        <p class="text-center text-h5 my-10">
+          {{ $t('pages.contact.paragraph') }}
+        </p>
+
         <ContactForm />
       </v-col>
     </v-row>
@@ -168,7 +173,7 @@ import { nbrs } from '@/config/i18n.config'
 })
 export default class Resume extends Vue {
   private socials: Array<Social> | null = null;
-  private featured: number = 2;
+  private featured: number = 3;
   private nbrPj: number | null = null;
 
   created () {

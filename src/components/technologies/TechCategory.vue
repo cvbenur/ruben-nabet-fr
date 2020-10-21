@@ -15,6 +15,7 @@
         cols="6"
         sm="6"
         md="3"
+        xl="2"
       >
         <TechTile
           :techno="tech"

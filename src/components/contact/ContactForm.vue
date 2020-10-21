@@ -1,7 +1,7 @@
 <template>
   <v-container class="fluid fill-height">
     <v-row align="center" justify="center">
-      <v-col cols="12" class="pa-0">
+      <v-col cols="12" xl="8" class="pa-0">
         <v-text-field
           v-model="name"
           outlined
@@ -15,7 +15,7 @@
     </v-row>
 
     <v-row align="center" justify="center">
-      <v-col cols="12" class="pa-0">
+      <v-col cols="12" xl="8" class="pa-0">
         <v-text-field
           v-model="email"
           outlined
@@ -29,7 +29,7 @@
     </v-row>
 
     <v-row align="center" justify="center">
-      <v-col cols="12" class="pa-0">
+      <v-col cols="12" xl="8" class="pa-0">
         <v-text-field
           v-model="subject"
           outlined
@@ -43,7 +43,7 @@
     </v-row>
 
     <v-row align="center" justify="center">
-      <v-col cols="12" class="pa-0">
+      <v-col cols="12" xl="8" class="pa-0">
         <v-textarea
           v-model="message"
           outlined

@@ -2,7 +2,7 @@
   <v-container fluid>
     <Heading :title="$t(`pages.resume.heading`)" />
 
-    <p class="text-h5 text-justify mt-10">
+    <p class="text-h5 text-center mt-10">
       {{ $t('pages.resume.text') }}
     </p>
 
@@ -218,6 +218,7 @@
       <v-col
         cols="12"
         sm="6"
+        lg="4"
       >
         <v-hover v-slot:default="{ hover }">
           <v-btn
@@ -245,6 +246,7 @@
       <v-col
         cols="12"
         sm="6"
+        lg="4"
       >
         <v-hover v-slot:default="{ hover }">
           <v-btn
