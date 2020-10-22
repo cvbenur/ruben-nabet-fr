@@ -103,11 +103,11 @@
         },
         "hosting": {
           "title": "Hosting",
-          "text": "The website Ruben NABET is hosted personally by Ruben NABET.",
+          "text": "The website Ruben NABET is hosted by Netlify, Inc, located at :",
           "address": {
-            "street": "",
-            "city": "",
-            "country": ""
+            "street": "2325 Third Street, #275",
+            "city": "San Francisco, CA",
+            "country": "USA"
           }
         },
         "contact": {

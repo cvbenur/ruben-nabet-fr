@@ -103,11 +103,11 @@
         },
         "hosting": {
           "title": "Hébergement",
-          "text": "Le site ruben-nabet.fr est hébergé à titre personnel par Ruben NABET.",
+          "text": "Le site ruben-nabet.fr est hébergé par Netlify, Inc, située au :",
           "address": {
-            "street": "",
-            "city": "",
-            "country": ""
+            "street": "2325 Third Street, #275",
+            "city": "San Francisco, CA",
+            "country": "USA"
           }
         },
         "contact": {
