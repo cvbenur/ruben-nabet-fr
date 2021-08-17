@@ -21,7 +21,7 @@
       "about": {
         "title": "A propos de moi",
         "paragraphs": {
-          "first": "Je m'appelle Ruben, j'ai 22 ans, et je suis actuellement en M1 d'Ingénierie Informatique en banlieue parisienne.",
+          "first": "Je m'appelle Ruben, j'ai 23 ans, et je suis actuellement en M2 d'Ingénierie Informatique en banlieue parisienne.",
           "second": "J’ai toujours été curieux et j’adore jouer avec de nouvelles technologies, de nouveaux outils et de nouveaux langages de programmation.",
           "third": "Je programme depuis très jeune, et j’ai écrit et publié un certain nombre d’applications et de programmes (Bots Discord, Extensions VSCode, et sites Internet)."
         }
@@ -30,7 +30,7 @@
     "resume": {
       "title": "CV",
       "heading": "Mon CV",
-      "text": "Étudiant en M1 Software Engineering à la recherche d’un stage entre Avril 2021 et Septembre 2021 (4 mois minimum).",
+      "text": "Étudiant en M2 Software Engineering à la recherche d’un stage pour l’Hiver/Printempr 2022 (6 mois min.).",
       "see": "Voir mon CV",
       "lang": {
         "title": "Langues parlées",
@@ -83,7 +83,7 @@
     },
     "projects": {
       "title": "Mes projets",
-      "text": "Les projets sur lesquels j'ai travaillé.",
+      "text": "Quelques projets sur lesquels j'ai travaillé.",
       "heading": "Mes projets",
       "featured": "Projets mis en avant",
       "other": "autre projet",
