@@ -57,6 +57,22 @@
       "link": "https://nuxtjs.org/"
     },
     {
+      "title": "ReactJS",
+      "textColor": "white",
+      "pillColor": "#00D8FF",
+      "tileColor": "#ade5ff",
+      "icon": "react.svg",
+      "link": "https://reactjs.org/"
+    },
+    {
+      "title": "NestJS",
+      "textColor": "white",
+      "pillColor": "#E0234E",
+      "tileColor": "#ff91ab",
+      "icon": "nestjs.svg",
+      "link": "https://nestjs.com/"
+    },
+    {
       "title": "SCSS",
       "textColor": "white",
       "pillColor": "#CD6799",
@@ -175,6 +191,14 @@
       "tileColor": "#6875d9",
       "icon": "c.svg",
       "link": "https://en.wikipedia.org/wiki/C_(programming_language)/"
+    },
+    {
+      "title": "C#",
+      "textColor": "white",
+      "pillColor": "#390091",
+      "tileColor": "#b280ff",
+      "icon": "c-sharp.svg",
+      "link": "https://docs.microsoft.com/en-us/dotnet/csharp/"
     },
     {
       "title": "Python",
