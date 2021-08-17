@@ -21,7 +21,7 @@
       "about": {
         "title": "About me",
         "paragraphs": {
-          "first": "My name is Ruben, I'm 22, and I'm currently in Computer Engineering school in the Paris Area.",
+          "first": "My name is Ruben, I'm 23, and I'm currently in Computer Engineering school in the Paris Area.",
           "second": "I’ve always been curious and love to experiment with new tech, new tools and new programming languages.",
           "third": "I’ve been programming from an early age, and I’ve written and published a number of apps and programs (Discord Bots, VSCode Extensions, and websites)."
         }
@@ -30,7 +30,7 @@
     "resume": {
       "title": "Resume",
       "heading": "My resume",
-      "text": "4th-year Software Engineering student looking for an internship between Apr. 2021 and Sept. 2021 (4 months minimum).",
+      "text": "Software Engineering Master’s student looking for an internship in the Winter/Spring of 2022 (6 months min.).",
       "see": "Check out my resume",
       "lang": {
         "title": "Languages",
@@ -83,7 +83,7 @@
     },
     "projects": {
       "title": "My projects",
-      "text": "The projects which I've worked on.",
+      "text": "A few projects I've worked on.",
       "heading": "My projects",
       "featured": "Featured projects",
       "other": "other project",
