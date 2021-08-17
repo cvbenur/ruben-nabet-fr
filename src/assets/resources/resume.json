@@ -61,6 +61,18 @@
   "pro": [
     {
       "en": {
+        "title": "Full-Stack Developer at Société Générale",
+        "description": "Front (React, TS) & Back-end (SpringBoot) Development on a Generic Electronic Document Management (EDM) Web-App.",
+        "date": "May 2021 - Sept. 2021."
+      },
+      "fr": {
+        "title": "Développeur Full-Stack chez Société Générale",
+        "description": "Développement Web Front (React, TS) et Back (SpringBoot) sur une Web-App Générique de Gestion Electronique de Documents (GED).",
+        "date": "Mai 2021 - Sept. 2021."
+      }
+    },
+    {
+      "en": {
         "title": "Freelance Full-Stack Developer",
         "description": "Web Design & Developement, Server & Database Administration.",
         "date": "Since Sept. 2020."
@@ -140,9 +152,9 @@
         "date": "Since Sept. 2020."
       },
       "fr": {
-        "title": "Cycle Ingénieur - Efrei Paris - M1 Software Engineering",
+        "title": "Cycle Ingénieur - Efrei Paris - M2 Software Engineering",
         "description": "Master Ingénierie Informatique et Sciences du Numérique. Diplômé en 2022.",
-        "date": "Depuis Septembre 2020."
+        "date": "Depuis Septembre 2021."
       }
     },
     {
