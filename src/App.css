@@ -1,0 +1,7 @@
+@reference "./index.css"
+
+#root {}
+
+html {
+  @apply bg-secondary p-8;
+}
